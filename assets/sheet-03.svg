@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 168">
+  <rect x="0.8" y="0.8" width="358.4" height="166.4" fill="none" stroke="#cdc4ba" stroke-opacity="0.30" stroke-width="1"/>
+  <rect x="6" y="6" width="348" height="156" fill="none" stroke="#cdc4ba" stroke-opacity="0.12" stroke-width="0.5"/>
+
+  <g stroke="#d9a441" stroke-opacity="0.85" stroke-width="0.7" fill="none">
+    <path d="M12 10h6M15 7v6"/>
+    <path d="M348 10h-6M345 7v6"/>
+    <path d="M12 158h6M15 155v6"/>
+    <path d="M348 158h-6M345 155v6"/>
+  </g>
+
+  <rect x="28" y="50" width="44" height="56" fill="none" stroke="#e2342a" stroke-width="1.15"/>
+  <rect x="30.4" y="52.4" width="39.2" height="51.2" fill="none" stroke="#e2342a" stroke-opacity="0.35" stroke-width="0.4"/>
+  <text x="50" y="87" text-anchor="middle" font-family="Times New Roman, Georgia, serif" font-size="26" font-weight="700" fill="#e2342a">間</text>
+
+  <text x="92" y="70" font-family="Georgia, Times New Roman, serif" font-size="20" letter-spacing="5.4" fill="#cdc4ba">QUIET</text>
+  <path d="M92 78 h180" stroke="#cdc4ba" stroke-opacity="0.22" stroke-width="0.6"/>
+  <text x="92" y="98" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="10" letter-spacing="2.8" fill="#958f87">いまは静かに</text>
+  <text x="92" y="116" font-family="ui-monospace, JetBrains Mono, monospace" font-size="8.5" letter-spacing="1.8" fill="#7a756e">NO SEALS ON THE FLOOR</text>
+
+  <g stroke="#cdc4ba" stroke-opacity="0.16" stroke-width="0.6" fill="none">
+    <path d="M292 50 v4 M290 52 h4"/>
+    <path d="M308 50 v4 M306 52 h4"/>
+    <path d="M292 106 v4 M290 108 h4"/>
+    <path d="M308 106 v4 M306 108 h4"/>
+  </g>
+
+  <text x="344" y="152" text-anchor="end" font-family="ui-monospace, JetBrains Mono, monospace" font-size="8" letter-spacing="1.8" fill="#7a756e">SHEET 03</text>
+</svg>

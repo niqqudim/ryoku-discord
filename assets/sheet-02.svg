@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200">
+  <rect x="0.8" y="0.8" width="518.4" height="198.4" fill="none" stroke="#cdc4ba" stroke-opacity="0.30" stroke-width="1"/>
+  <rect x="6" y="6" width="508" height="188" fill="none" stroke="#cdc4ba" stroke-opacity="0.12" stroke-width="0.5"/>
+
+  <g stroke="#d9a441" stroke-opacity="0.85" stroke-width="0.7" fill="none">
+    <path d="M12 10h6M15 7v6"/>
+    <path d="M508 10h-6M505 7v6"/>
+    <path d="M12 190h6M15 187v6"/>
+    <path d="M508 190h-6M505 187v6"/>
+  </g>
+
+  <rect x="28" y="58" width="44" height="56" fill="none" stroke="#e2342a" stroke-width="1.15"/>
+  <rect x="30.4" y="60.4" width="39.2" height="51.2" fill="none" stroke="#e2342a" stroke-opacity="0.35" stroke-width="0.4"/>
+  <text x="50" y="95" text-anchor="middle" font-family="Times New Roman, Georgia, serif" font-size="26" font-weight="700" fill="#e2342a">力</text>
+
+  <rect x="96" y="58" width="44" height="56" fill="none" stroke="#d9a441" stroke-width="1.15"/>
+  <rect x="98.4" y="60.4" width="39.2" height="51.2" fill="none" stroke="#d9a441" stroke-opacity="0.35" stroke-width="0.4"/>
+  <text x="118" y="95" text-anchor="middle" font-family="Times New Roman, Georgia, serif" font-size="26" font-weight="700" fill="#d9a441">美</text>
+
+  <path d="M72 86 h8 l4 4 -4 4 h8" fill="none" stroke="#d9a441" stroke-width="0.9" stroke-linejoin="miter"/>
+  <circle cx="80" cy="86" r="1.15" fill="#d9a441"/>
+  <circle cx="84" cy="90" r="1.15" fill="#d9a441"/>
+  <circle cx="80" cy="94" r="1.15" fill="#d9a441"/>
+
+  <text x="168" y="78" font-family="Georgia, Times New Roman, serif" font-size="22" letter-spacing="6.2" fill="#cdc4ba">FRIENDS</text>
+  <path d="M168 86 h196" stroke="#cdc4ba" stroke-opacity="0.22" stroke-width="0.6"/>
+  <text x="168" y="108" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="11" letter-spacing="3.2" fill="#958f87">力と美のために</text>
+  <text x="168" y="128" font-family="ui-monospace, JetBrains Mono, monospace" font-size="9" letter-spacing="2.2" fill="#7a756e">STRENGTH  /  BEAUTY</text>
+
+  <g stroke="#cdc4ba" stroke-opacity="0.16" stroke-width="0.6" fill="none">
+    <path d="M430 58 v4 M428 60 h4"/>
+    <path d="M446 58 v4 M444 60 h4"/>
+    <path d="M462 58 v4 M460 60 h4"/>
+    <path d="M430 122 v4 M428 124 h4"/>
+    <path d="M446 122 v4 M444 124 h4"/>
+    <path d="M462 122 v4 M460 124 h4"/>
+  </g>
+
+  <text x="504" y="184" text-anchor="end" font-family="ui-monospace, JetBrains Mono, monospace" font-size="8" letter-spacing="1.8" fill="#7a756e">SHEET 02</text>
+</svg>

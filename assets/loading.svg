@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+<defs><mask id="paint"><rect width="320" height="320" fill="#000"/><ellipse cx="130.8" cy="143.4" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.048;0.181;0.94;1" values="0;0;27.0;27.0;27.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.048;0.181;0.94;1" values="0;0;37.0;37.0;37.0"/></ellipse><ellipse cx="226.5" cy="145.2" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.119;0.253;0.94;1" values="0;0;28.0;28.0;28.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.119;0.253;0.94;1" values="0;0;24.0;24.0;24.0"/></ellipse><ellipse cx="172.0" cy="222.8" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.173;0.306;0.94;1" values="0;0;56.0;56.0;56.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.173;0.306;0.94;1" values="0;0;28.0;28.0;28.0"/></ellipse><ellipse cx="103.1" cy="216.9" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.244;0.378;0.94;1" values="0;0;28.0;28.0;28.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.244;0.378;0.94;1" values="0;0;24.0;24.0;24.0"/></ellipse><ellipse cx="100.6" cy="94.8" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.340;0.473;0.94;1" values="0;0;51.0;51.0;51.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.340;0.473;0.94;1" values="0;0;23.0;23.0;23.0"/></ellipse><ellipse cx="164.9" cy="113.8" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.411;0.544;0.94;1" values="0;0;34.0;34.0;34.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.411;0.544;0.94;1" values="0;0;29.0;29.0;29.0"/></ellipse><ellipse cx="138.2" cy="197.2" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.494;0.628;0.94;1" values="0;0;41.0;41.0;41.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.494;0.628;0.94;1" values="0;0;24.0;24.0;24.0"/></ellipse><ellipse cx="219.4" cy="100.0" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.578;0.711;0.94;1" values="0;0;46.0;46.0;46.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.578;0.711;0.94;1" values="0;0;32.0;32.0;32.0"/></ellipse><ellipse cx="219.1" cy="187.4" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.619;0.753;0.94;1" values="0;0;28.0;28.0;28.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.619;0.753;0.94;1" values="0;0;36.0;36.0;36.0"/></ellipse><ellipse cx="148.3" cy="65.2" rx="0" ry="0" fill="#fff">
+<animate attributeName="rx" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.691;0.824;0.94;1" values="0;0;28.0;28.0;28.0"/>
+<animate attributeName="ry" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.691;0.824;0.94;1" values="0;0;24.0;24.0;24.0"/></ellipse></mask></defs>
+<text x="160" y="214" text-anchor="middle" font-family="Noto Serif CJK JP, Shippori Mincho, serif" font-size="188" font-weight="700" fill="#cdc4ba" opacity=".14">力</text>
+<g mask="url(#paint)"><text x="160" y="214" text-anchor="middle" font-family="Noto Serif CJK JP, Shippori Mincho, serif" font-size="188" font-weight="700" fill="#cdc4ba">力</text></g>
+<g transform="translate(87.7 138.8) rotate(6.1)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.000;0.067;0.167;1" values="-170 0;-170 0;0 0;0 0;-170 0"/>
+<rect x="0" y="-2.5" width="86.6" height="5" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.000;0.023;0.067;0.167;1" values="0;0;1;1;0;0"/>
+</rect></g></g><g transform="translate(251.4 121.5) rotate(149.3)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.083;0.133;0.233;1" values="170 0;170 0;0 0;0 0;170 0"/>
+<rect x="0" y="-2.5" width="56.6" height="5" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.083;0.101;0.133;0.233;1" values="0;0;1;1;0;0"/>
+</rect></g></g><g transform="translate(209.5 240.9) rotate(-128.7)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.125;0.192;0.292;1" values="-170 0;-170 0;0 0;0 0;-170 0"/>
+<rect x="0" y="-3.0" width="59.1" height="6" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.125;0.148;0.192;0.292;1" values="0;0;1;1;0;0"/>
+</rect></g></g><g transform="translate(126.5 232.9) rotate(-145.6)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.208;0.258;0.358;1" values="170 0;170 0;0 0;0 0;170 0"/>
+<rect x="0" y="-2.5" width="56.7" height="5" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.208;0.226;0.258;0.358;1" values="0;0;1;1;0;0"/>
+</rect></g></g><g transform="translate(89.5 72.9) rotate(63.1)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.292;0.358;0.458;1" values="-170 0;-170 0;0 0;0 0;-170 0"/>
+<rect x="0" y="-2.5" width="49.0" height="5" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.292;0.315;0.358;0.458;1" values="0;0;1;1;0;0"/>
+</rect></g></g><g transform="translate(196.0 79.1) rotate(155.4)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.375;0.425;0.525;1" values="-170 0;-170 0;0 0;0 0;-170 0"/>
+<rect x="0" y="-2.5" width="54.8" height="5" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.375;0.393;0.425;0.525;1" values="0;0;1;1;0;0"/>
+</rect></g></g><g transform="translate(139.4 223.7) rotate(-109.7)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.458;0.508;0.608;1" values="-170 0;-170 0;0 0;0 0;-170 0"/>
+<rect x="0" y="-2.5" width="51.0" height="5" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.458;0.476;0.508;0.608;1" values="0;0;1;1;0;0"/>
+</rect></g></g><g transform="translate(240.3 77.2) rotate(132.6)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.542;0.592;0.692;1" values="170 0;170 0;0 0;0 0;170 0"/>
+<rect x="0" y="-2.5" width="61.8" height="5" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.542;0.559;0.592;0.692;1" values="0;0;1;1;0;0"/>
+</rect></g></g><g transform="translate(244.6 202.2) rotate(-150.0)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.583;0.633;0.733;1" values="-170 0;-170 0;0 0;0 0;-170 0"/>
+<rect x="0" y="-2.5" width="59.0" height="5" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.583;0.601;0.633;0.733;1" values="0;0;1;1;0;0"/>
+</rect></g></g><g transform="translate(123.4 48.3) rotate(34.2)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.667;0.700;0.800;1" values="-170 0;-170 0;0 0;0 0;-170 0"/>
+<rect x="0" y="-2.5" width="60.3" height="5" fill="#d9a441" opacity="0">
+<animate attributeName="opacity" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.667;0.678;0.700;0.800;1" values="0;0;1;1;0;0"/>
+</rect></g></g>
+</svg>

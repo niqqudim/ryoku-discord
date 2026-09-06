@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 556 482"
+     width="556"
+     height="482"
+     shape-rendering="geometricPrecision">
+  <!-- Reconstructed from logo-mark-v2.png (556×482); transparent background -->
+  <g fill="#E8E0D4">
+    <!-- Combined カ stem + crossbar + upper left stroke (above the cut) -->
+    <polygon points="
+      288,11 344,11
+      315,92
+      481,93
+      454,141
+      298,141
+      271,219
+      242,293
+      216,343
+      195,371
+      123,371
+      162,328
+      181,298
+      214,225
+      242,142
+      132,141
+      176,93
+      260,92
+    "/>
+
+    <!-- Lower-left blade (below the cut), tapering to a point -->
+    <polygon points="
+      115,380
+      187,380
+      186,381
+      167,399
+      150,412
+      119,432
+      71,455
+      45,464
+      16,471
+      11,471
+      64,429
+    "/>
+
+    <!-- Right stroke of カ: vertical bar with sheared foot -->
+    <polygon points="
+      405,157 458,157
+      458,385
+      389,472
+      322,471
+      405,366
+    "/>
+  </g>
+
+  <!-- Orange accent, same horizontal band as the crossbar -->
+  <polygon fill="#CC5C30" points="499,93 545,93 523,141 471,141"/>
+</svg>
