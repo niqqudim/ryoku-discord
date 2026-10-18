@@ -10,7 +10,7 @@
 */
 
 /* import theme modules */
-@import url('https://niqqudim.github.io/ryoku-discord/build/ryoku.css');
+@import url('https://raw.githubusercontent.com/niqqudim/ryoku-discord/refs/heads/main/build/ryoku.css');
 
 body {
     /* fonts, change to '' for default discord font */
