@@ -1,11 +1,11 @@
 # Ryoku discord theme
 ink and paper
 
-![Chatl](https://i.postimg.cc/BnLfL1km/image.png)
+![Chatl](https://i.postimg.cc/BQGHYJvW/image.png)
 
 ![Settings](https://i.postimg.cc/SKdhdWFT/image.png)
 
-![Friends](https://i.postimg.cc/qMq9S3k9/image.png)
+![Friends](https://i.postimg.cc/nrmKszcN/image.png)
 
 ## install
 
@@ -16,6 +16,7 @@ ink and paper
 3. if you want you can also easily customize the theme by opening the file and modifying the variables 
 
 the theme file only has the settings needed, the rest is imported
+
 
 ## credits
 
