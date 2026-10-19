@@ -10,7 +10,7 @@
 */
 
 /* import theme modules */
-@import url('https://raw.githubusercontent.com/niqqudim/ryoku-discord/refs/heads/main/build/ryoku.css');
+@import url('https://niqqudim.github.io/ryoku-discord/build/ryoku.css');
 
 body {
     /* fonts, change to '' for default discord font */
@@ -37,6 +37,10 @@ body {
     --chat-open-duration: 210ms;
     --send-animation: on;
     --send-animation-duration: 210ms;
+    --friends-animation: on;
+    --requests-animation: on; /* message requests */
+    --quests-animation: on;
+    --shop-animation: on;
 
     /* top bar options */
     --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, var(--gap) recommended if button position is set to titlebar) */
@@ -79,7 +83,12 @@ body {
     --ryoku-loader: on; /* loading animation */
     --corner-ticks: on; /* off: rounded panels from --roundness */
     --chat-ghost: on; /* big name at the top of a chat */
+    --chat-ghost-color: var(--text-1);
+    --server-ghost-color: var(--accent-2); /* the server name at the top of a server */
     --friends-ghost: on; /* big FRIENDS behind the friends list */
+    --friends-ghost-color: var(--text-1);
+    --colophon: on; /* the vertical text in the member list and active now */
+    --dossier-top-bar: on; /* chat title restyle: 'direct message', 'group chat', the channel hanko and // */
     --ryoku-loader-size: 220px;
 
     /* panel labels(titles, like //nav) */
@@ -92,7 +101,7 @@ body {
     --gap-color: var(--bg-3); /* color of the empty space between panels */
 }
 
-/* color options, ryoku palette: paper, ink, vermillion, gold */
+/* color options */
 :root {
     --colors: on; /* off: discord default colors, on: custom colors below */
 
