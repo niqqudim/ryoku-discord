@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 140" width="440" height="140">
+<defs>
+<linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="440" y2="0" spreadMethod="repeat">
+<stop offset="0" stop-color="#e2342a"/>
+<stop offset="0.25" stop-color="#cdc4ba"/>
+<stop offset="0.75" stop-color="#cdc4ba"/>
+<stop offset="1" stop-color="#e2342a"/>
+<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="440 0" dur="1.5s" repeatCount="indefinite"/>
+</linearGradient>
+</defs>
+<text font-family="'DM Mono', 'JetBrains Mono', ui-monospace, monospace" font-size="18" fill="url(#shine)" xml:space="preserve"><tspan x="4" y="18.0">                            __</tspan><tspan x="4" y="39.6">   _____   __  __  ____    / /__  __  __</tspan><tspan x="4" y="61.2">  / ___/  / / / / / __ \  / //_/ / / / /</tspan><tspan x="4" y="82.8"> / /     / /_/ / / /_/ / / ,&lt;   / /_/ /</tspan><tspan x="4" y="104.4">/_/      \__, /  \____/ /_/|_|  \__,_/</tspan><tspan x="4" y="126.0">        /____/</tspan></text>
+</svg>
