@@ -5469,4 +5469,46 @@ div.layer_bc663c > div > div > div.button_aec7ab > .buttonInner_aec7ab {
     .side_aa8da2 .item_aa8da2.selected_aa8da2 [fill]:not([fill="none"]) {
         color: var(--text-0) !important;
     }
+
+    /* code blocks */
+    #app-mount .hljs {
+        color: var(--code-text, var(--text-2));
+    }
+    #app-mount .hljs-comment,
+    #app-mount .hljs-quote {
+        color: var(--code-comment, var(--text-5));
+    }
+    #app-mount .hljs-keyword,
+    #app-mount .hljs-selector-tag,
+    #app-mount .hljs-built_in,
+    #app-mount .hljs-deletion {
+        color: var(--code-keyword, var(--accent-2));
+    }
+    #app-mount .hljs-string,
+    #app-mount .hljs-attr,
+    #app-mount .hljs-addition,
+    #app-mount .hljs-template-tag {
+        color: var(--code-string, var(--green-4));
+    }
+    #app-mount .hljs-number,
+    #app-mount .hljs-literal,
+    #app-mount .hljs-symbol,
+    #app-mount .hljs-bullet {
+        color: var(--code-number, var(--yellow-4));
+    }
+    #app-mount .hljs-title,
+    #app-mount .hljs-section,
+    #app-mount .hljs-name,
+    #app-mount .hljs-type,
+    #app-mount .hljs-selector-class,
+    #app-mount .hljs-selector-id {
+        color: var(--code-title, var(--purple-4));
+    }
+    #app-mount .hljs-meta,
+    #app-mount .hljs-variable,
+    #app-mount .hljs-params,
+    #app-mount .hljs-attribute,
+    #app-mount .hljs-tag {
+        color: var(--code-other, var(--text-3));
+    }
 }
