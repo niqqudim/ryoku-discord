@@ -9,7 +9,7 @@
  * @authorId 681210857337913387
 */
 
-/* light version of the ryoku discord theme */
+/* light version */
 
 /* import theme modules */
 @import url('https://niqqudim.github.io/ryoku-discord/build/ryoku.css');
@@ -59,6 +59,7 @@ body {
     --dms-icon-svg-url: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2241.5 -831.0 896.0 896.0%22%3E%3Cpath transform=%22scale%281 -1%29%22 fill=%22%23fff%22 d=%22M462 736C462 772 455 821 415 821C398 821 391 817 375 799C356 778 347 746 347 744C347 743 351 733 353 728C354 726 359 678 359 675C359 641 348 549 343 511C311 502 295 498 246 489C234 486 173 477 160 474C138 471 121 468 121 451C121 412 188 412 203 412C212 412 232 412 248 416L332 435C329 423 316 364 313 351C302 309 295 293 233 144L199 68C197 64 196 51 208 51C214 51 219 52 229 62C260 91 284 123 296 141C328 186 372 290 395 361L420 442C421 451 421 452 423 454C426 457 468 467 474 468L553 489L635 510C653 515 677 527 677 540C677 558 656 558 652 558C648 558 637 557 624 556C578 551 571 549 533 540L442 523L441 526C442 530 447 554 448 560C449 571 455 630 456 637L461 727ZM501 -24C501 -39 511 -55 524 -55C569 -55 709 138 790 271C805 296 858 395 858 430C858 437 857 448 851 459C834 480 832 482 818 503C782 540 767 555 745 555C730 555 723 536 723 525C723 523 724 521 724 520C732 491 733 487 733 472C733 402 659 243 651 226C629 176 552 61 528 35C505 11 501 6 501 -24Z%22/%3E%3C/svg%3E"); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 90%; /* css mask-size property */
     --dms-icon-scale: 1.6;
+    --dms-icon-animation: stamp; /* stamp: ryoku press, spin: midnight turn, off: none */
     --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
     --dms-icon-color-after: var(--white); /* icon color when button is hovered/pressed*/
     --custom-dms-background: off; /* 'image' to use a background image (must set url variable below), color to use a custom color/gradient */
@@ -82,7 +83,7 @@ body {
 
     /* styling options */
     --custom-spotify-bar: on; /* off: default, on: custom text-like spotify progress bar */
-    --ryoku-loader: on; /* loading animation */
+    --ryoku-loader: on; /* loading animation. on: ink 力, ascii: RYOKU in ascii (system24 style), enso: brush circle, off: discord default */
     --corner-ticks: on; /* off: rounded panels from --roundness */
     --chat-ghost: on; /* big name at the top of a chat */
     --chat-ghost-color: var(--text-1);
@@ -90,23 +91,24 @@ body {
     --friends-ghost: on; /* big FRIENDS behind the friends list */
     --friends-ghost-color: var(--text-1);
     --colophon: on; /* the vertical text in the member list and active now */
+    --plates: on; /* the printed plates (member list, add friend, empty states). off: no plates, 愛 centred on add friend */
     --dossier-top-bar: on; /* chat title restyle: 'direct message', 'group chat', the channel hanko and // */
     --ryoku-loader-size: 220px;
 
     /* panel labels(titles, like //nav) */
     --panel-labels: on; 
-    --label-color: var(--text-4); /* color of labels */
+    --label-color: var(--text-2); /* color of labels (ink) */
     --label-hover-color: var(--accent-2); /* color of labels when the panel is hovered */
     --label-font-weight: 400; /* font weight of labels */
 
-    /* gap color */
-    --gap-color: var(--bg-3); /* color of the empty space between panels */
-
     /* light mode */
     --light-mode: on;
+
+    /* gap color */
+    --gap-color: var(--bg-3); /* color of the empty space between panels */
 }
 
-/* color options, ryoku palette: paper, ink, vermillion, gold */
+/* color options */
 :root {
     --colors: on; /* off: discord default colors, on: custom colors below */
 
@@ -194,7 +196,7 @@ body {
 body {
     --ryo-plus-color: var(--art-ink); /* + field behind the expanded code view */
     --ryo-plus-gap-chat: 150px;
-    --ryo-plus-alpha-chat: 0.07;
+    --ryo-plus-alpha-chat: 0.16;
     --ryo-plus-show-chat: 1; /* 1 on, 0 off */
 
     --ryo-code-kanji-size: 12rem;
@@ -249,12 +251,12 @@ body {
 body {
     --chat-plus-grid: on;
     --chat-plus-gap: 150px;
-    --chat-plus-alpha: 7%;
-    --chat-plus-lock: fixed; /* fixed or local (scrolls with the messages) */
+    --chat-plus-alpha: 20%;
+    --chat-plus-lock: fixed; /* fixed or local */
 
     --settings-plus-grid: on;
     --settings-plus-gap: 200px;
-    --settings-plus-alpha: 7%;
+    --settings-plus-alpha: 20%;
     --settings-plus-lock: local; /* local or fixed */
 }
 
@@ -263,7 +265,7 @@ body {
     --channels-sun: on;
     --channels-sun-size: 192px;
     --channels-sun-opacity: 0.45;
-    --channels-sun-x: 81px; /* negative = cut off by the left edge */
+    --channels-sun-x: 81px; /* from the left edge of the //channels_ panel, negative = cut off by that edge */
     --channels-sun-under-panel: 52px; /* how much under the user panel */
     --sun-color: var(--art-seal); /* both suns */
 
@@ -290,4 +292,26 @@ body {
     --panel-label-padding: 0 6px;
     --panel-label-letter-spacing: 1.4px;
     --panel-label-font: 'SpaceMono Nerd Font', 'Space Mono', 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* artwork
+ * for custom images: url("https://...") or url("data:image/svg+xml,...").
+ */
+body {
+    --sun-image: var(--ryo-sun); /* sun in the channels area */
+    --nitro-sun-image: var(--ryo-nitro-sun); /* the sun on the nitro page */
+    --love-image: var(--ryo-love); /* 愛 on add friend, empty wishlist, nitro */
+    --gate-image: var(--ryo-gate); /* empty bookmarks, nitro */
+    --moth-image: var(--ryo-moth);
+    --bully-image: var(--ryo-bully);
+    --hands-image: var(--ryo-hands); /* settings hands */
+    --server-hands-image: var(--ryo-hands-server); /* server settings hands (vertical) */
+    --friends-ghost-image: var(--ryo-friends-word); /* big FRIENDS behind the friends list */
+    --ghost-texture: var(--ryo-dither); /* texture of the chat and server ghosts, linear-gradient(#000, #000) for solid */
+    --plate-01-image: var(--ryo-plate-01); /* member list plate */
+    --plate-02-image: var(--ryo-plate-02); /* add friend plate */
+    --plate-03-image: var(--ryo-plate-03); /* empty states plate */
+    --code-kanji-image: var(--ryo-code-kanji); /* 力 in the code preview */
+    --settings-kanji-image: var(--ryo-settings-kanji); /* 力 in settings */
+    --app-icon-image: var(--ryo-avatar); /* replaces the blurple app icon */
 }
