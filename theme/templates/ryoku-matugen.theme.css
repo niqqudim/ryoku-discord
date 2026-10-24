@@ -10,12 +10,13 @@
 */
 
 /* matugen version
- * this file is a matugen template, not a ready theme: the {{colors.*}} tokens get filled from your wallpaper.
+ * this file is a matugen template, not a ready theme: the colour tokens (colors.<name>.default.hex) get filled from your wallpaper.
  * add it to your matugen config, for example:
  *   [templates.ryoku-discord]
  *   input_path = "~/.config/matugen/templates/ryoku-matugen.theme.css"
  *   output_path = "~/.config/vesktop/themes/ryoku-matugen.theme.css"
  * then enable the rendered file in vesktop. only the colour block differs from ryoku.theme.css.
+ * add --light-mode: on; for light schemes.
  */
 
 /* import theme modules */
@@ -162,6 +163,13 @@ body {
     --border-hover: color-mix(in srgb, var(--text-1) 42%, transparent); /* border color of panels when hovered */
     --button-border: color-mix(in srgb, var(--text-1) 26%, transparent); /* normal border color of buttons */
 
+    /* colours that live inside images */
+    --ticks-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 shape-rendering=%22crispEdges%22%3E%3Cg fill=%22%23{{colors.on_surface.default.hex_stripped}}%22 fill-opacity=%22.26%22%3E%3Crect x=%228%22 y=%220%22 width=%228%22 height=%221%22/%3E%3Crect x=%228%22 y=%2223%22 width=%228%22 height=%221%22/%3E%3Crect x=%220%22 y=%228%22 width=%221%22 height=%228%22/%3E%3Crect x=%2223%22 y=%228%22 width=%221%22 height=%228%22/%3E%3C/g%3E%3Cg fill=%22%23{{colors.on_surface.default.hex_stripped}}%22 fill-opacity=%22.75%22%3E%3Crect x=%220%22 y=%220%22 width=%228%22 height=%221%22/%3E%3Crect x=%220%22 y=%220%22 width=%221%22 height=%228%22/%3E%3Crect x=%2216%22 y=%220%22 width=%228%22 height=%221%22/%3E%3Crect x=%2223%22 y=%220%22 width=%221%22 height=%228%22/%3E%3Crect x=%220%22 y=%2223%22 width=%228%22 height=%221%22/%3E%3Crect x=%220%22 y=%2216%22 width=%221%22 height=%228%22/%3E%3Crect x=%2216%22 y=%2223%22 width=%228%22 height=%221%22/%3E%3Crect x=%2223%22 y=%2216%22 width=%221%22 height=%228%22/%3E%3C/g%3E%3C/svg%3E"); /* corner ticks on the panels (--corner-ticks) */
+    --loader-ascii-sweep: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%2224%22 viewBox=%220 0 260 24%22 preserveAspectRatio=%22none%22%3E%3Cmask id=%22m%22 style=%22mask-type:alpha%22%3E%3Cimage width=%22260%22 height=%2224%22 preserveAspectRatio=%22none%22 style=%22image-rendering:pixelated%22 href=%22data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAAAYCAYAAAAca4NeAAAEC0lEQVR42u2c0XHcMAxEz1eFS0gH6f/THbgEd+F8ZeZGg8U+gLzEJ4E/kj2yLEHAYrEE+XabsX18fX58v//6/abOyfF2u93U+asN907keLRl9POM9XEfE/AgP56rIwmADpj8vUd0PJ7/64A/nj8e1fsTEFB2efwf6jscz2cMIGwJfOL0kfMfnZ5k+iwrPv6tc/5ngkMUrA4sj89Onk+9u7pXBpLKTgMYAwgpCGQZlzhV5qwd5+s4/zPAIbo3BUllC2qT4zWRHTJQyuyUfeMrjrcrg0A1S3Wuq+gGtNbeVc/vvLZyH6ojRPZTdiXfazSHYQgy27g63mVdR4mVA3YEtAgMSMZTAJXRf/W+Ff0guk/EDrolQ8YQsozvviVhJ8MQhjW0MovLcjuYw84svpNh0JmS6nsTu6rvtZMdnJlp3K8S6B2xrMoSogzmdIQsCCJWoxR2x3p2BgOtwzNgqJRV7j5u9qHKfAjgTcnwwsN9QOUA0e87sw1HoMj0AAomkbNn4LDCIlzpQQI00wxWmEZmhwyoaJk4GsIFx05mkAU1ocoqIFTQEXDoZjl3LxVwlOZTau7Ygfq/JNCJpjSAcIFSgbKCzhTbardhBBJRE46bb89EQ3cdYUhO5Kw0anWbkyIbkUCvAMGVhMVTA0Knpqaqu2MMKxkxc0YlnlUBruv06nmyEsIxJicoZiUEAajs2ap6yQDCRQYJHJUFScditVwgU2400z8TbKMgdEBANQSiJTgx0QmgXS1B6T8DCCcpIzrMQFH5TExcpcpZuUBofJddEZFStVM/e6GX6tHo9BpQO0XXnYFJ3K8S8BXHpsxAiX3qd9WeAbrSb7X5hmgMBEhJ2/Lq4iYCCm5q9H+xqgGEH6QbVJVyygxUUGbOWWEJDhScs1dttQKodLaF6giRVuBAYZd+MIBw8tGhgoQZqGwdOTdhCRVQ6NbMdGqyQq9J23Kng1DZUNldfRfCDmfl44iKyBlcFiKB2xHQKs5fKRWqjk9YFxX9aKcm6c3IQJI8d1UnuQJg3AcEvDO4Bhw3zaaCgdbyWQdepa+gS5UrDERl6J39B3SjFAKeK8LqAMJJsj6pJQlAkF76blZcaWFeYQbVRh23k1O3N6M72+CEzo4QvSpkDyD8EACgzUeEJhJKnjlot2WXzGpUhVPHSCp/77YxU2VTpYTKgIBukOK+20pwn4k5nAoQdu8MpJyFtul+fX58V/ZTdDoC7d/vTK125+np7Et1+7TH+1f1CbJXQiVZ7GAAr8IiRlQsCEgRODiBa2UtgwKHlSacVQCl6xeyUqLCljIbdtdzVIP1GYlmAOGHagpEca4u9Y0yYkVHIOBAljx3ug275VVGwdUeD52FRW7BVwYM1Q1pV/dNeMXxB4Zb4S3GXV+mAAAAAElFTkSuQmCC%22/%3E%3C/mask%3E%3Crect width=%22260%22 height=%2224%22 fill=%22%23{{colors.primary_fixed.default.hex_stripped}}%22 mask=%22url(%23m)%22/%3E%3C/svg%3E"); /* bright sweep across the ascii loader */
+    --loader-ascii-dither: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 4 4%22 shape-rendering=%22crispEdges%22%3E%3Cpath fill=%22%23{{colors.outline.default.hex_stripped}}%22 d=%22M0 0h1v1h-1zM2 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1z%22/%3E%3C/svg%3E"); /* dithered base of the ascii loader */
+    --loader-label-color: {{colors.outline.default.hex}}; /* '// INK AND PAPER' under the ascii loader */
+    --loader-rule-color: {{colors.outline_variant.default.hex}}; /* the line under that label */
+
     /* base colors */
     --red-1: #f06a62;
     --red-2: #e2342a;
@@ -178,8 +186,8 @@ body {
     --blue-1: {{colors.primary_fixed.default.hex}};
     --blue-2: {{colors.primary.default.hex}};
     --blue-3: {{colors.primary.default.hex}};
-    --blue-4: {{colors.primary_container.default.hex}};
-    --blue-5: {{colors.on_primary_container.default.hex}};
+    --blue-4: color-mix(in oklab, {{colors.primary.default.hex}} 86%, black); /* same steps as the default palette, works for dark and light schemes */
+    --blue-5: color-mix(in oklab, {{colors.primary.default.hex}} 62%, black);
 
     --yellow-1: #e8c56a;
     --yellow-2: #d9a441;
