@@ -87,7 +87,11 @@ body {
     --server-ghost-color: var(--accent-2); /* the server name at the top of a server */
     --friends-ghost: off; /* big FRIENDS behind the friends list */
     --friends-ghost-color: var(--text-1);
-    --colophon: on; /* the vertical text in the member list and active now */
+    --colophon: off; /* the vertical text in the member list and active now */
+    --love-art: off; /* 愛 art. off: discord's own pictures come back (nitro pages), or nothing where ryoku adds it */
+    --bully-art: off; /* bully woodcut on empty states. off: discord's own pictures, or nothing */
+    --torii-art: off; /* torii gate art (bookmarks, reminders, nitro). off: discord's own pictures */
+    --boost-extras: off; /* '// BOOSTING_' and the ryoku strip in the how boosting works popup */
     --dossier-top-bar: off; /* chat title restyle: 'direct message', 'group chat', the channel hanko and // */
     --ryoku-loader-size: 220px;
 
@@ -247,7 +251,7 @@ body {
     --chat-plus-alpha: 7%;
     --chat-plus-lock: fixed; /* fixed or local (scrolls with the messages) */
 
-    --settings-plus-grid: on;
+    --settings-plus-grid: off;
     --settings-plus-gap: 200px;
     --settings-plus-alpha: 7%;
     --settings-plus-lock: local; /* local or fixed */
@@ -278,7 +282,8 @@ body {
 /* panel labels */
 body {
     --panel-label-position: center; /* left, center or right */
-    --panel-label-prefix: '//';
+    --panel-label-prefix: '';
+    --panel-label-suffix: '';
     --panel-label-offset: 10px; /* from the panel edge when left or right */
     --panel-label-top: -0.6em;
     --panel-label-size: 10px;

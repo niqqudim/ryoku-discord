@@ -13,6 +13,7 @@
 
 /* import theme modules */
 @import url('https://niqqudim.github.io/ryoku-discord/build/ryoku.css');
+@import url('https://niqqudim.github.io/ryoku-discord/build/ryoku-viewer.css'); /* ryoku image viewer, the calm templates leave this out */
 @import url('https://niqqudim.github.io/ryoku-discord/build/ryoku-nodither.css');
 
 body {
@@ -92,6 +93,10 @@ body {
     --friends-ghost: on; /* big FRIENDS behind the friends list */
     --friends-ghost-color: var(--text-1);
     --colophon: on; /* the vertical text in the member list and active now */
+    --love-art: on; /* 愛 art. off: discord's own pictures come back (nitro pages), or nothing where ryoku adds it */
+    --bully-art: on; /* bully woodcut on empty states. off: discord's own pictures, or nothing */
+    --torii-art: on; /* torii gate art (bookmarks, reminders, nitro). off: discord's own pictures */
+    --boost-extras: on; /* '// BOOSTING_' and the ryoku strip in the how boosting works popup */
     --plates: on; /* the printed plates (member list, add friend, empty states). off: no plates, 愛 centred on add friend */
     --dossier-top-bar: on; /* chat title restyle: 'direct message', 'group chat', the channel hanko and // */
     --ryoku-loader-size: 220px;
@@ -295,6 +300,7 @@ body {
 body {
     --panel-label-position: center; /* left, center or right */
     --panel-label-prefix: '//';
+    --panel-label-suffix: '_';
     --panel-label-offset: 10px; /* from the panel edge when left or right */
     --panel-label-top: -0.6em;
     --panel-label-size: 10px;

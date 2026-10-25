@@ -1,0 +1,68 @@
+/* ryoku image viewer. imported by ryoku.theme.css and the full templates, the calm templates skip it
+   so discord's own image viewer shows. https://github.com/niqqudim/ryoku-discord */
+/* image viewer */
+div.topBar__6088c {
+    column-gap: 0 !important;
+}
+div.topBar__6088c > .authorAvatar__6088c {
+    z-index: 2;
+    margin: 0 !important;
+    transform: translateX(16px);
+}
+div.topBar__6088c > div.author__6088c.base__5cd44 {
+    position: relative;
+    margin-inline-start: 10px !important;
+    transform: translateX(16px);
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: -60px;
+        right: -12px;
+        top: 50%;
+        height: 56px;
+        transform: translateY(-50%);
+        background-color: var(--bg-4);
+    }
+}
+@container body style(--corner-ticks: on) {
+    div.topBar__6088c > div.author__6088c.base__5cd44::before {
+        border: 1px solid transparent;
+        border-image: var(--ryo-ticks) 8 / 8px / 0 stretch;
+    }
+}
+div.topBar__6088c > .closeButton__6088c {
+    margin-inline-start: 8px !important;
+}
+div.topBar__6088c > .actionButtons_cc1819,
+div.topBar__6088c > .button_aec7ab {
+    background-color: var(--bg-4);
+    border: 1px solid color-mix(in srgb, var(--text-1) 26%, transparent);
+    border-radius: var(--roundness);
+}
+div.topBar__6088c > .button_aec7ab {
+    transform: translateY(2%) scale(110%);
+}
+div.layer_bc663c > div > div > .button_aec7ab {
+    background: var(--bg-4);
+    border: 1px solid color-mix(in srgb, var(--text-1) 26%, transparent);
+    border-radius: var(--roundness);
+    color: var(--text-1);
+    transform: scale(140%);
+    height: 50%;
+    place-items: center;
+    display: flex;
+    transition: background-color 90ms ease-out, color 90ms ease-out;
+}
+div.layer_bc663c > div > div > .button_aec7ab:hover {
+    background: var(--text-1);
+    color: var(--text-0);
+}
+div.layer_bc663c > div > div > div.button_aec7ab > .buttonInner_aec7ab {
+    border-color: color-mix(in srgb, var(--text-1) 42%, transparent);
+    height: 100%;
+}
+.imageWrapper.imageWrapper_af017a.media_a22bfd > .loadingOverlay_af017a {
+    background-color: color-mix(in srgb, var(--text-1) 19%, transparent);
+    border-radius: var(--roundness);
+}

@@ -2492,10 +2492,10 @@ body {
         --panel-label-letter-spacing: 0.6px;
     }
     .guilds__5e434::after {
-        content: var(--panel-label-prefix) 'NAV_';
+        content: var(--panel-label-prefix) 'NAV' var(--panel-label-suffix, '_');
     }
     .panels__5e434::after {
-        content: var(--panel-label-prefix) ' USER_';
+        content: var(--panel-label-prefix) ' USER' var(--panel-label-suffix, '_');
     }
     /* quest bar: have //user_ follow it when it expands */
     .panels__5e434 .postEnrollmentBackground__1699b {
@@ -2505,35 +2505,35 @@ body {
         top: min(var(--panel-label-top), calc(anchor(--ryo-quest top, 0px) + var(--panel-label-top)));
     }
     .sidebarList__5e434::after {
-        content: var(--panel-label-prefix) ' CHANNELS_';
+        content: var(--panel-label-prefix) ' CHANNELS' var(--panel-label-suffix, '_');
     }
     .subtitleContainer_f75fb0::after {
-        content: var(--panel-label-prefix) ' CHANNEL_';
+        content: var(--panel-label-prefix) ' CHANNEL' var(--panel-label-suffix, '_');
     }
     .messagesWrapper__36d07::after {
-        content: var(--panel-label-prefix) ' CHAT_';
+        content: var(--panel-label-prefix) ' CHAT' var(--panel-label-suffix, '_');
     }
     .channelTextArea_f75fb0::after {
-        content: var(--panel-label-prefix) ' INPUT_';
+        content: var(--panel-label-prefix) ' INPUT' var(--panel-label-suffix, '_');
     }
     .container_c8ffbb::after,
     .content_f75fb0 > .membersWrap_c8ffbb::after {
-        content: var(--panel-label-prefix) ' MEMBERS_';
+        content: var(--panel-label-prefix) ' MEMBERS' var(--panel-label-suffix, '_');
     }
     .container__133bf > .container__9293f::after {
-        content: var(--panel-label-prefix) ' FRIENDS_';
+        content: var(--panel-label-prefix) ' FRIENDS' var(--panel-label-suffix, '_');
     }
     .peopleColumn__133bf::after {
-        content: var(--panel-label-prefix) ' LIST_';
+        content: var(--panel-label-prefix) ' LIST' var(--panel-label-suffix, '_');
     }
     .nowPlayingColumn__133bf::after {
-        content: var(--panel-label-prefix) ' ACTIVITY_';
+        content: var(--panel-label-prefix) ' ACTIVITY' var(--panel-label-suffix, '_');
     }
     .container__01ae2 > .container__9293f::after {
-        content: var(--panel-label-prefix) ' THREAD_';
+        content: var(--panel-label-prefix) ' THREAD' var(--panel-label-suffix, '_');
     }
     .callContainer_cb9592::after {
-        content: var(--panel-label-prefix) ' VC_';
+        content: var(--panel-label-prefix) ' VC' var(--panel-label-suffix, '_');
     }
 
     .content_f75fb0 > .membersWrap_c8ffbb,
@@ -2977,6 +2977,23 @@ body {
     }
 }
 
+/* art toggles, off shows discord's own picture (or nothing where ryoku only adds art) */
+@property --love-art {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@property --bully-art {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@property --torii-art {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+
 /* plates */
 @property --plates {
     syntax: 'off | on';
@@ -3007,6 +3024,7 @@ body {
 }
 }
 
+@container body style(--love-art: on) {
 /* 愛 */
 #add_friend-tab .grid_a14595::before {
     content: "";
@@ -3026,6 +3044,7 @@ body {
         left: 50%;
         translate: -50% 0;
     }
+}
 }
 
 /* member list plate */
@@ -3153,6 +3172,7 @@ div.img__8b924,
 }
 }
 
+@container body style(--bully-art: on) {
 /* bully woodcut */
 #pending-tab .wrapper__33d12::before,
 .empty_e766f2::before,
@@ -3235,6 +3255,7 @@ div.img__8b924,
     height: 176px;
     margin-bottom: 16px;
 }
+}
 
 /* no claimed quests */
 @container body style(--plates: on) {
@@ -3294,6 +3315,7 @@ div.img__8b924,
     }
 }
 
+@container body style(--bully-art: on) {
 /* no pinned messages */
 .emptyPlaceholder__432f4 .image__432f4 {
     background-image: none !important;
@@ -3301,7 +3323,9 @@ div.img__8b924,
     mask: var(--bully-image, var(--ryo-bully)) center / contain no-repeat;
     opacity: 0.8;
 }
+}
 
+@container body style(--love-art: on) {
 /* empty wishlist */
 .emptyStateContainer__4fbcc {
     display: flex;
@@ -3319,6 +3343,7 @@ div.img__8b924,
     mask: var(--love-image, var(--ryo-love)) center / contain no-repeat;
     opacity: 0.9;
     pointer-events: none;
+}
 }
 
 /* server settings hands */
@@ -3372,6 +3397,7 @@ div.img__8b924,
 }
 }
 
+@container body style(--torii-art: on) {
 /* bookmarks, reminders, scheduled messages */
 .upsellImage_d42d06 /* bookmarks, reminders */,
 .upsellImage__1f5b6 /* scheduled messages */ {
@@ -3380,6 +3406,7 @@ div.img__8b924,
     height: 140px !important;
     background-color: var(--art-seal);
     mask: var(--gate-image, var(--ryo-gate)) center / contain no-repeat;
+}
 }
 
 /* upsell demo messages */
@@ -3417,6 +3444,7 @@ div.img__8b924,
 }
 
 /* nitro pages */
+@container body style(--love-art: on) {
 .wumpus_a2332b,
 .bottomIllustration__11fc5,
 .headerGraphicContainer__8a031 .image__8ef77 {
@@ -3428,10 +3456,13 @@ div.img__8b924,
 .smallCloud_a2332b {
     display: none !important;
 }
+}
+@container body style(--torii-art: on) {
 .wumpusImage_b807c8 {
     content: var(--ryo-blank);
     background-color: var(--art-seal);
     mask: var(--gate-image, var(--ryo-gate)) center / contain no-repeat;
+}
 }
 
 .cardTitle_c19a92,
@@ -3440,6 +3471,7 @@ div.img__8b924,
     --text-overlay-light: #ffffff;
 }
 
+@container body style(--bully-art: on) {
 /* no connections */
 .emptyState__41de9::before {
     content: "";
@@ -3452,6 +3484,7 @@ div.img__8b924,
     mask: var(--bully-image, var(--ryo-bully)) center / contain no-repeat;
     opacity: 0.8;
     pointer-events: none;
+}
 }
 
 /* no games connected */
@@ -4158,7 +4191,7 @@ img[src*="25c27c1328c986f6"] {
 }
 .outer_c0bea0.user-profile-sidebar::after,
 .outer_c0bea0:has(> .profileContentInner__9c3be)::after {
-    content: var(--panel-label-prefix) ' PROFILE_';
+    content: var(--panel-label-prefix) ' PROFILE' var(--panel-label-suffix, '_');
     position: absolute;
     top: var(--panel-label-top);
     left: 50%;
@@ -4493,72 +4526,7 @@ body,
     transition: border-color 90ms ease-out;
 }
 
-/* image viewer */
-div.topBar__6088c {
-    column-gap: 0 !important;
-}
-div.topBar__6088c > .authorAvatar__6088c {
-    z-index: 2;
-    margin: 0 !important;
-    transform: translateX(16px);
-}
-div.topBar__6088c > div.author__6088c.base__5cd44 {
-    position: relative;
-    margin-inline-start: 10px !important;
-    transform: translateX(16px);
-    &::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: -60px;
-        right: -12px;
-        top: 50%;
-        height: 56px;
-        transform: translateY(-50%);
-        background-color: var(--bg-4);
-    }
-}
-@container body style(--corner-ticks: on) {
-    div.topBar__6088c > div.author__6088c.base__5cd44::before {
-        border: 1px solid transparent;
-        border-image: var(--ryo-ticks) 8 / 8px / 0 stretch;
-    }
-}
-div.topBar__6088c > .closeButton__6088c {
-    margin-inline-start: 8px !important;
-}
-div.topBar__6088c > .actionButtons_cc1819,
-div.topBar__6088c > .button_aec7ab {
-    background-color: var(--bg-4);
-    border: 1px solid color-mix(in srgb, var(--text-1) 26%, transparent);
-    border-radius: var(--roundness);
-}
-div.topBar__6088c > .button_aec7ab {
-    transform: translateY(2%) scale(110%);
-}
-div.layer_bc663c > div > div > .button_aec7ab {
-    background: var(--bg-4);
-    border: 1px solid color-mix(in srgb, var(--text-1) 26%, transparent);
-    border-radius: var(--roundness);
-    color: var(--text-1);
-    transform: scale(140%);
-    height: 50%;
-    place-items: center;
-    display: flex;
-    transition: background-color 90ms ease-out, color 90ms ease-out;
-}
-div.layer_bc663c > div > div > .button_aec7ab:hover {
-    background: var(--text-1);
-    color: var(--text-0);
-}
-div.layer_bc663c > div > div > div.button_aec7ab > .buttonInner_aec7ab {
-    border-color: color-mix(in srgb, var(--text-1) 42%, transparent);
-    height: 100%;
-}
-.imageWrapper.imageWrapper_af017a.media_a22bfd > .loadingOverlay_af017a {
-    background-color: color-mix(in srgb, var(--text-1) 19%, transparent);
-    border-radius: var(--roundness);
-}
+/* image viewer: moved to build/ryoku-viewer.css (the calm templates leave it out) */
 
 /* active now colophon */
 @container body style(--colophon: on) {
@@ -5080,6 +5048,12 @@ div.layer_bc663c > div > div > div.button_aec7ab > .buttonInner_aec7ab {
 }
 
 /* how boosting works */
+@property --boost-extras {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--boost-extras: on) {
 .container__8a031:has(> .body__8a031 > .bodyInner__8a031 > .video__6b794) {
     --ryo-boost-modal: on;
 }
@@ -5137,6 +5111,7 @@ div.layer_bc663c > div > div > div.button_aec7ab > .buttonInner_aec7ab {
             url("data:image/svg+xml,%3Csvg fill=%22%23cdc4ba%22 fill-opacity=%22.45%22 xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 112 28%22 preserveAspectRatio=%22none%22 shape-rendering=%22crispEdges%22%3E%3Crect x=%220%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%224%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%226%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2210%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2214%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2216%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2220%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2222%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2224%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2230%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2232%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2238%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2240%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2244%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2246%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2248%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2252%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2254%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2258%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2262%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2264%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2268%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2270%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2272%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2276%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2280%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2286%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2288%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2290%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%2292%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%2296%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%22100%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3Crect x=%22102%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%22106%22 y=%220%22 width=%223%22 height=%2228%22/%3E%3Crect x=%22110%22 y=%220%22 width=%221%22 height=%2228%22/%3E%3C/svg%3E") right center / 112px 18px no-repeat,
             linear-gradient(#000, #000) 30px 0 / calc(100% - 142px) 100% no-repeat;
     }
+}
 }
 .bodyInner__8a031 > .video__6b794 {
     width: 90% !important;
