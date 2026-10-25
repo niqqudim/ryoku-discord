@@ -1226,6 +1226,25 @@ body {
     .wrapper__2ea32:hover .icon__2ea32 /* correct channel icon color */ {
         color: var(--text-3);
     }
+    /* channels with new messages, brighter so they stand out from read ones */
+    .modeUnreadImportant__2ea32 .name__2ea32,
+    .modeUnreadImportant__2ea32 .icon__2ea32 {
+        color: var(--text-1);
+    }
+
+    /* recoloured discord icons */
+    .icon__235ca[style*="6f076a64de25de4b"],
+    .icon__235ca[style*="61ccab047dad737a"] {
+        background-image: none !important;
+    }
+    .icon__235ca[style*="6f076a64de25de4b"] {
+        background-color: var(--text-1);
+        mask: url("https://discord.com/assets/6f076a64de25de4b.svg") center / contain no-repeat;
+    }
+    .icon__235ca[style*="61ccab047dad737a"] {
+        background-color: var(--accent-2);
+        mask: url("https://discord.com/assets/61ccab047dad737a.svg") center / contain no-repeat;
+    }
 
     .text_b88801 > strong /* xxx is typing.. */ {
         color: var(--text-3);
@@ -2477,6 +2496,13 @@ body {
     }
     .panels__5e434::after {
         content: var(--panel-label-prefix) ' USER_';
+    }
+    /* quest bar: have //user_ follow it when it expands */
+    .panels__5e434 .postEnrollmentBackground__1699b {
+        anchor-name: --ryo-quest;
+    }
+    .panels__5e434:has(.postEnrollmentBackground__1699b)::after {
+        top: min(var(--panel-label-top), calc(anchor(--ryo-quest top, 0px) + var(--panel-label-top)));
     }
     .sidebarList__5e434::after {
         content: var(--panel-label-prefix) ' CHANNELS_';
@@ -4019,7 +4045,10 @@ textarea::placeholder,
     .content_f75fb0 > .membersWrap_c8ffbb,
     .container__133bf > .container__9293f,
     .peopleColumn__133bf,
-    .nowPlayingColumn__133bf {
+    .nowPlayingColumn__133bf,
+    .container__01ae2 > .container__9293f /* thread header */,
+    .searchResultsWrap_a98f3b /* search results */,
+    .container_f369db /* forum */ {
         border: 1px solid transparent !important;
         border-image: var(--ryo-ticks) 8 / 8px / 0 stretch !important;
         border-radius: 0 !important;
