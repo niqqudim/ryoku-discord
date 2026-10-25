@@ -95,6 +95,7 @@ body {
     --bully-art: off; /* bully woodcut on empty states. off: discord's own pictures, or nothing */
     --torii-art: off; /* torii gate art (bookmarks, reminders, nitro). off: discord's own pictures */
     --boost-extras: off; /* '// BOOSTING_' and the ryoku strip in the how boosting works popup */
+    --image-viewer: off; /* ryoku styling in the image viewer. off: discord's own viewer */
     --plates: on; /* the printed plates (member list, add friend, empty states). off: no plates, 愛 centred on add friend */
     --dossier-top-bar: off; /* chat title restyle: 'direct message', 'group chat', the channel hanko and // */
     --ryoku-loader-size: 220px;

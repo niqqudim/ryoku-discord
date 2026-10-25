@@ -1222,6 +1222,22 @@ body {
         color: var(--text-3);
     }
 
+    /* server header: invite icon and dropdown arrow use the normal icon colours instead of ink */
+    .inviteButton_f37cb1,
+    .guildDropdown_f37cb1 .headerChildren_f37cb1 > svg {
+        color: var(--text-4);
+        transition: color var(--list-item-transition);
+    }
+    .inviteButton_f37cb1:hover,
+    .guildDropdown_f37cb1:hover .headerChildren_f37cb1 > svg {
+        color: var(--text-3);
+    }
+
+    /* server boosts and events rows: icon keeps its colour on hover (selected rows still go dark) */
+    .wrapper__2ea32 .link__2ea32.basicChannelRowLink__2ea32:hover svg {
+        color: var(--channel-icon);
+    }
+
     .modeUnreadImportant__2ea32 .icon__2ea32,
     .wrapper__2ea32:hover .icon__2ea32 /* correct channel icon color */ {
         color: var(--text-3);
@@ -3728,7 +3744,17 @@ body,
     --mention-background: var(--text-1);
     --mention-foreground: var(--text-0);
 }
-.mentioned__5126c::before {
+.message__5126c.mentioned__5126c {
+    position: relative;
+}
+.message__5126c.mentioned__5126c::before /* left line on messages that mention you */ {
+    content: "";
+    display: block;
+    position: absolute;
+    top: var(--radius-sm, 4px);
+    height: calc(100% - 2 * var(--radius-sm, 4px));
+    z-index: 1;
+    pointer-events: none;
     background-color: var(--text-1) !important;
 }
 .mention {
@@ -4526,7 +4552,79 @@ body,
     transition: border-color 90ms ease-out;
 }
 
-/* image viewer: moved to build/ryoku-viewer.css (the calm templates leave it out) */
+/* image viewer */
+@property --image-viewer {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--image-viewer: on) {
+div.topBar__6088c {
+    column-gap: 0 !important;
+}
+div.topBar__6088c > .authorAvatar__6088c {
+    z-index: 2;
+    margin: 0 !important;
+    transform: translateX(16px);
+}
+div.topBar__6088c > div.author__6088c.base__5cd44 {
+    position: relative;
+    margin-inline-start: 10px !important;
+    transform: translateX(16px);
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: -60px;
+        right: -12px;
+        top: 50%;
+        height: 56px;
+        transform: translateY(-50%);
+        background-color: var(--bg-4);
+    }
+}
+@container body style(--corner-ticks: on) {
+    div.topBar__6088c > div.author__6088c.base__5cd44::before {
+        border: 1px solid transparent;
+        border-image: var(--ryo-ticks) 8 / 8px / 0 stretch;
+    }
+}
+div.topBar__6088c > .closeButton__6088c {
+    margin-inline-start: 8px !important;
+}
+div.topBar__6088c > .actionButtons_cc1819,
+div.topBar__6088c > .button_aec7ab {
+    background-color: var(--bg-4);
+    border: 1px solid color-mix(in srgb, var(--text-1) 26%, transparent);
+    border-radius: var(--roundness);
+}
+div.topBar__6088c > .button_aec7ab {
+    transform: translateY(2%) scale(110%);
+}
+div.layer_bc663c > div > div > .button_aec7ab {
+    background: var(--bg-4);
+    border: 1px solid color-mix(in srgb, var(--text-1) 26%, transparent);
+    border-radius: var(--roundness);
+    color: var(--text-1);
+    transform: scale(140%);
+    height: 50%;
+    place-items: center;
+    display: flex;
+    transition: background-color 90ms ease-out, color 90ms ease-out;
+}
+div.layer_bc663c > div > div > .button_aec7ab:hover {
+    background: var(--text-1);
+    color: var(--text-0);
+}
+div.layer_bc663c > div > div > div.button_aec7ab > .buttonInner_aec7ab {
+    border-color: color-mix(in srgb, var(--text-1) 42%, transparent);
+    height: 100%;
+}
+.imageWrapper.imageWrapper_af017a.media_a22bfd > .loadingOverlay_af017a {
+    background-color: color-mix(in srgb, var(--text-1) 19%, transparent);
+    border-radius: var(--roundness);
+}
+}
 
 /* active now colophon */
 @container body style(--colophon: on) {

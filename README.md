@@ -17,6 +17,32 @@ ink and paper
 
 the theme file only has the settings needed, the rest is imported
 
+### templates
+
+[`theme/templates`](theme/templates) has ready-made versions of the theme file with different settings already changed: light mode, calm (less animation and art), no dither (smooth art) and a matugen template. install them the same way as `ryoku.theme.css`, and only enable one at a time. see [the templates readme](theme/templates/README.md) for screenshots of each.
+
+<table>
+  <tr>
+    <td align="center"><strong>light</strong><br><img src="https://i.postimg.cc/REPLACE/light.png" width="300" alt="ryoku light"></td>
+    <td align="center"><strong>calm</strong><br><img src="https://i.postimg.cc/REPLACE/calm.png" width="300" alt="ryoku calm"></td>
+    <td align="center"><strong>calm light</strong><br><img src="https://i.postimg.cc/REPLACE/calm-light.png" width="300" alt="ryoku calm light"></td>
+  </tr>
+</table>
+
+### matugen (colours from your wallpaper)
+
+[`ryoku-matugen.theme.css`](theme/templates/ryoku-matugen.theme.css) is a [matugen](https://github.com/InioX/matugen) template, not a ready theme, so don't load it in discord as-is.
+
+1. put it in your matugen templates folder, for example `~/.config/matugen/templates/`
+2. add it to your matugen config:
+   ```toml
+   [templates.ryoku-discord]
+   input_path = "~/.config/matugen/templates/ryoku-matugen.theme.css"
+   output_path = "~/.config/vesktop/themes/ryoku-matugen.theme.css"
+   ```
+3. run matugen on your wallpaper, then enable the rendered `ryoku-matugen.theme.css` in vesktop
+4. for a light scheme, add `--light-mode: on;` to the first `body` block of the template
+
 
 ## credits
 

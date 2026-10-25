@@ -11,7 +11,6 @@
 
 /* import theme modules */
 @import url('https://niqqudim.github.io/ryoku-discord/build/ryoku.css');
-@import url('https://niqqudim.github.io/ryoku-discord/build/ryoku-viewer.css'); /* ryoku image viewer, the calm templates leave this out */
 
 body {
     /* fonts, change to '' for default discord font */
@@ -93,6 +92,7 @@ body {
     --bully-art: on; /* bully woodcut on empty states. off: discord's own pictures, or nothing */
     --torii-art: on; /* torii gate art (bookmarks, reminders, nitro). off: discord's own pictures */
     --boost-extras: on; /* '// BOOSTING_' and the ryoku strip in the how boosting works popup */
+    --image-viewer: on; /* ryoku styling in the image viewer. off: discord's own viewer */
     --dossier-top-bar: on; /* chat title restyle: 'direct message', 'group chat', the channel hanko and // */
     --ryoku-loader-size: 220px;
 
