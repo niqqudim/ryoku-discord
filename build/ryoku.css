@@ -3753,6 +3753,11 @@ body,
     position: absolute;
     top: var(--radius-sm, 4px);
     height: calc(100% - 2 * var(--radius-sm, 4px));
+    /* pinned to the left edge of the message, before the avatar, whatever discord sets */
+    left: 0 !important;
+    inset-inline-start: 0 !important;
+    right: auto !important;
+    margin: 0 !important;
     z-index: 1;
     pointer-events: none;
     background-color: var(--text-1) !important;
