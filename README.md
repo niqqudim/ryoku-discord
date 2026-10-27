@@ -1,7 +1,7 @@
 # Ryoku discord theme
 ink and paper
 
-![Chatl](https://i.postimg.cc/BQGHYJvW/image.png)
+![Chatl](https://i.postimg.cc/q7YFjX3s/image.png)
 
 ![Settings](https://i.postimg.cc/SKdhdWFT/image.png)
 
@@ -23,9 +23,9 @@ the theme file only has the settings needed, the rest is imported
 
 <table>
   <tr>
-    <td align="center"><strong>light</strong><br><img src="" width="300" alt="ryoku light"></td>
-    <td align="center"><strong>calm</strong><br><img src="" width="300" alt="ryoku calm"></td>
-    <td align="center"><strong>calm light</strong><br><img src="" width="300" alt="ryoku calm light"></td>
+    <td align="center"><strong>light</strong><br><img src="https://i.postimg.cc/KYd9nG6g/image.png" width="300" alt="ryoku light"></td>
+    <td align="center"><strong>calm</strong><br><img src="https://i.postimg.cc/P57Kjfrm/image.png" width="300" alt="ryoku calm"></td>
+    <td align="center"><strong>calm light</strong><br><img src="https://i.postimg.cc/gJFDxMhB/image.png" width="300" alt="ryoku calm light"></td>
   </tr>
 </table>
 
