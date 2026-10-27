@@ -3760,7 +3760,7 @@ body,
     margin: 0 !important;
     z-index: 1;
     pointer-events: none;
-    background-color: var(--text-1) !important;
+    background-color: var(--accent-2) !important; /* red line, like midnight */
 }
 .mention {
     border-radius: 3px;
@@ -4014,7 +4014,7 @@ textarea::placeholder,
         transition: background-color 90ms ease-out;
     }
 }
-/* midnight dms button animation (spin) */
+/* midnight dms button animation */
 @container body style(--dms-icon-animation: spin) {
     #app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
     #app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
@@ -4549,7 +4549,7 @@ body,
     background-color: var(--text-0) !important;
 }
 
-/* vencord settings */
+/* vesktop settings */
 .root__49fc1.vc-settings-modal,
 .root__49fc1:has(> .vc-settings-modal) {
     border: 1px solid color-mix(in srgb, var(--text-1) 42%, transparent);
@@ -5547,7 +5547,7 @@ div.layer_bc663c > div > div > div.button_aec7ab > .buttonInner_aec7ab {
         color: var(--text-0) !important;
     }
 
-    /* primary buttons (Send Friend Request and others) */
+    /* primary buttons */
     .button_a22cb0.primary_a22cb0,
     .button_a22cb0.primary_a22cb0 span,
     .button_a22cb0.primary_a22cb0 div,

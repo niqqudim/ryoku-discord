@@ -59,6 +59,38 @@
   </tr>
 </table>
 
+## plates (current)
+the plates the theme uses, shown in the default colours. the files in [`plates/`](plates) are white masks the theme colours in, these previews are in [`plates/preview/`](plates/preview).
+
+<table>
+  <tr>
+    <td align="center"><strong>plate 01</strong><br><img src="./plates/preview/plate-01.svg" width="250" alt="plate 01"></td>
+    <td align="center"><strong>plate 02</strong><br><img src="./plates/preview/plate-02.svg" width="250" alt="plate 02"></td>
+    <td align="center"><strong>plate 03</strong><br><img src="./plates/preview/plate-03.svg" width="250" alt="plate 03"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>plate 01 dither</strong><br><img src="./plates/preview/plate-01-dither.svg" width="250" alt="plate 01 dither"></td>
+    <td align="center"><strong>plate 02 dither</strong><br><img src="./plates/preview/plate-02-dither.svg" width="250" alt="plate 02 dither"></td>
+    <td align="center"><strong>plate 03 dither</strong><br><img src="./plates/preview/plate-03-dither.svg" width="250" alt="plate 03 dither"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>plate 03 solid</strong><br><img src="./plates/preview/plate-03-solid.svg" width="250" alt="plate 03 solid"></td>
+    <td align="center"><strong>plate 03 solid dither</strong><br><img src="./plates/preview/plate-03-solid-dither.svg" width="250" alt="plate 03 solid dither"></td>
+    <td></td>
+  </tr>
+</table>
+
+## simple plates
+plain versions of the plates, used by the calm templates through [`build/ryoku-calm.css`](../build/ryoku-calm.css).
+
+<table>
+  <tr>
+    <td align="center"><strong>simple 01</strong><br><img src="./plates/preview/simple-plate-01.svg" width="250" alt="simple 01"></td>
+    <td align="center"><strong>simple 02</strong><br><img src="./plates/preview/simple-plate-02.svg" width="250" alt="simple 02"></td>
+    <td align="center"><strong>simple 03</strong><br><img src="./plates/preview/simple-plate-03.svg" width="250" alt="simple 03"></td>
+  </tr>
+</table>
+
 ## loaders
 
 <table>

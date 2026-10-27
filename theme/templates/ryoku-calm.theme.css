@@ -9,8 +9,11 @@
  * @authorId 681210857337913387
 */
 
+/* calm mode */
+
 /* import theme modules */
 @import url('https://niqqudim.github.io/ryoku-discord/build/ryoku.css');
+@import url('https://niqqudim.github.io/ryoku-discord/build/ryoku-calm.css');
 
 body {
     /* fonts, change to '' for default discord font */
@@ -140,8 +143,8 @@ body {
     --art-ink: var(--text-1); /* drawings, plate frames and lettering,+ grids */
     --art-gold: color-mix(in srgb, var(--text-1) 55%, transparent); /* gold corner marks, links and the loader's slashes */
     --art-seal: var(--accent-2); /* red seals, the sun */
-    --mention: color-mix(in srgb, var(--text-1) 6%, transparent); /* background of messages that mention you */
-    --mention-hover: color-mix(in srgb, var(--text-1) 9%, transparent); /* background of messages that mention you when hovered */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
     --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
     --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
 

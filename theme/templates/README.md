@@ -1,26 +1,26 @@
 # templates
 
-ready-made versions of [`ryoku.theme.css`](../ryoku.theme.css) with some settings already changed. download one, put it in your themes folder and enable it, same as the main theme file. only enable one ryoku theme at a time.
+ready versions of [`ryoku.theme.css`](../ryoku.theme.css) with some settings already changed. download one, put it in your themes folder and enable it, same as the main theme file. only enable one ryoku theme at a time.
 
 ## ryoku light
-[`ryoku-light.theme.css`](ryoku-light.theme.css): ink on paper, the light version
+[`ryoku-light.theme.css`](ryoku-light.theme.css): light version
 
 <table>
   <tr>
-    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-light-chat.png" width="250" alt="Ryoku Light chat"></td>
-    <td align="center"><strong>settings</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-light-settings.png" width="250" alt="Ryoku Light settings"></td>
-    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-light-add-friend.png" width="250" alt="Ryoku Light add friend"></td>
+    <td align="center"><strong>chat</strong><br><img src="" width="250" alt="Ryoku Light chat"></td>
+    <td align="center"><strong>settings</strong><br><img src="" width="250" alt="Ryoku Light settings"></td>
+    <td align="center"><strong>add friend</strong><br><img src="" width="250" alt="Ryoku Light add friend"></td>
   </tr>
 </table>
 
 ## ryoku calm
-[`ryoku-calm.theme.css`](ryoku-calm.theme.css): less going on: fewer animations and art, plain panel titles, discord's own image viewer
+[`ryoku-calm.theme.css`](ryoku-calm.theme.css): less going on
 
 <table>
   <tr>
-    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-calm-chat.png" width="250" alt="Ryoku Calm chat"></td>
-    <td align="center"><strong>settings</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-calm-settings.png" width="250" alt="Ryoku Calm settings"></td>
-    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-calm-add-friend.png" width="250" alt="Ryoku Calm add friend"></td>
+    <td align="center"><strong>chat</strong><br><img src="" width="250" alt="Ryoku Calm chat"></td>
+    <td align="center"><strong>settings</strong><br><img src="" width="250" alt="Ryoku Calm settings"></td>
+    <td align="center"><strong>add friend</strong><br><img src="" width="250" alt="Ryoku Calm add friend"></td>
   </tr>
 </table>
 
@@ -29,9 +29,9 @@ ready-made versions of [`ryoku.theme.css`](../ryoku.theme.css) with some setting
 
 <table>
   <tr>
-    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-calm-light-chat.png" width="250" alt="Ryoku Calm Light chat"></td>
-    <td align="center"><strong>settings</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-calm-light-settings.png" width="250" alt="Ryoku Calm Light settings"></td>
-    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-calm-light-add-friend.png" width="250" alt="Ryoku Calm Light add friend"></td>
+    <td align="center"><strong>chat</strong><br><img src="" width="250" alt="Ryoku Calm Light chat"></td>
+    <td align="center"><strong>settings</strong><br><img src="" width="250" alt="Ryoku Calm Light settings"></td>
+    <td align="center"><strong>add friend</strong><br><img src="" width="250" alt="Ryoku Calm Light add friend"></td>
   </tr>
 </table>
 
@@ -40,9 +40,9 @@ ready-made versions of [`ryoku.theme.css`](../ryoku.theme.css) with some setting
 
 <table>
   <tr>
-    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-nodither-chat.png" width="250" alt="Ryoku No Dither chat"></td>
-    <td align="center"><strong>settings</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-nodither-settings.png" width="250" alt="Ryoku No Dither settings"></td>
-    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-nodither-add-friend.png" width="250" alt="Ryoku No Dither add friend"></td>
+    <td align="center"><strong>chat</strong><br><img src="" width="250" alt="Ryoku No Dither chat"></td>
+    <td align="center"><strong>settings</strong><br><img src="" width="250" alt="Ryoku No Dither settings"></td>
+    <td align="center"><strong>add friend</strong><br><img src="" width="250" alt="Ryoku No Dither add friend"></td>
   </tr>
 </table>
 
@@ -51,14 +51,14 @@ ready-made versions of [`ryoku.theme.css`](../ryoku.theme.css) with some setting
 
 <table>
   <tr>
-    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-nodither-light-chat.png" width="250" alt="Ryoku No Dither Light chat"></td>
-    <td align="center"><strong>settings</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-nodither-light-settings.png" width="250" alt="Ryoku No Dither Light settings"></td>
-    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/REPLACE/ryoku-nodither-light-add-friend.png" width="250" alt="Ryoku No Dither Light add friend"></td>
+    <td align="center"><strong>chat</strong><br><img src="" width="250" alt="Ryoku No Dither Light chat"></td>
+    <td align="center"><strong>settings</strong><br><img src="" width="250" alt="Ryoku No Dither Light settings"></td>
+    <td align="center"><strong>add friend</strong><br><img src="" width="250" alt="Ryoku No Dither Light add friend"></td>
   </tr>
 </table>
 
 ## ryoku matugen
-[`ryoku-matugen.theme.css`](ryoku-matugen.theme.css): colours from your wallpaper. a matugen template, see the [main readme](../../README.md) for how to use it
+[`ryoku-matugen.theme.css`](ryoku-matugen.theme.css): colours from your wallpaper. see the [main readme](../../README.md) for how to use it
 
 <table>
   <tr>

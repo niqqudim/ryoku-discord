@@ -10,13 +10,8 @@
 */
 
 /* matugen version
- * this file is a matugen template, not a ready theme: the colour tokens (colors.<name>.default.hex) get filled from your wallpaper.
- * add it to your matugen config, for example:
- *   [templates.ryoku-discord]
- *   input_path = "~/.config/matugen/templates/ryoku-matugen.theme.css"
- *   output_path = "~/.config/vesktop/themes/ryoku-matugen.theme.css"
- * then enable the rendered file in vesktop. only the colour block differs from ryoku.theme.css.
- * add --light-mode: on; for light schemes.
+ this file is a matugen template, not a ready theme
+ read the README for more 
  */
 
 /* import theme modules */
@@ -150,8 +145,8 @@ body {
     --art-ink: var(--text-1); /* drawings, plate frames and lettering,+ grids */
     --art-gold: color-mix(in srgb, var(--text-1) 55%, transparent); /* gold corner marks, links and the loader's slashes */
     --art-seal: var(--accent-2); /* red seals, the sun */
-    --mention: color-mix(in srgb, var(--text-1) 6%, transparent); /* background of messages that mention you */
-    --mention-hover: color-mix(in srgb, var(--text-1) 9%, transparent); /* background of messages that mention you when hovered */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
     --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
     --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
 
