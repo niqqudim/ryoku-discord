@@ -7,9 +7,9 @@ ready versions of [`ryoku.theme.css`](../ryoku.theme.css) with some settings alr
 
 <table>
   <tr>
-    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/nMb6dcbc/image.png" width="250" alt="Ryoku Light chat"></td>
+    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/KYd9nG6g/image.png" width="250" alt="Ryoku Light chat"></td>
     <td align="center"><strong>settings</strong><br><img src="https://i.postimg.cc/g0nzxspZ/image.png" width="250" alt="Ryoku Light settings"></td>
-    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/KYd9nG6g/image.png" width="250" alt="Ryoku Light add friend"></td>
+    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/nMb6dcbc/image.png" width="250" alt="Ryoku Light add friend"></td>
   </tr>
 </table>
 
@@ -18,9 +18,9 @@ ready versions of [`ryoku.theme.css`](../ryoku.theme.css) with some settings alr
 
 <table>
   <tr>
-    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/NFVL0n9H/image.png" width="250" alt="Ryoku Calm chat"></td>
+    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/P57Kjfrm/image.png" width="250" alt="Ryoku Calm chat"></td>
     <td align="center"><strong>settings</strong><br><img src="https://i.postimg.cc/Zn0C4mqL/image.png" width="250" alt="Ryoku Calm settings"></td>
-    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/P57Kjfrm/image.png" width="250" alt="Ryoku Calm add friend"></td>
+    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/NFVL0n9H/image.png" width="250" alt="Ryoku Calm add friend"></td>
   </tr>
 </table>
 
@@ -40,9 +40,9 @@ ready versions of [`ryoku.theme.css`](../ryoku.theme.css) with some settings alr
 
 <table>
   <tr>
-    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/pdX9qKHd/image.jpg" width="250" alt="Ryoku No Dither chat"></td>
+    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/ZK8CmwYq/image.png" width="250" alt="Ryoku No Dither chat"></td>
     <td align="center"><strong>settings</strong><br><img src="https://i.postimg.cc/QNWF4XR1/image.png" width="250" alt="Ryoku No Dither settings"></td>
-    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/ZK8CmwYq/image.png" width="250" alt="Ryoku No Dither add friend"></td>
+    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/pdX9qKHd/image.jpg" width="250" alt="Ryoku No Dither add friend"></td>
   </tr>
 </table>
 
@@ -51,8 +51,8 @@ ready versions of [`ryoku.theme.css`](../ryoku.theme.css) with some settings alr
 
 <table>
   <tr>
-    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/Gh2km0fg/image.png" width="250" alt="Ryoku No Dither Light chat"></td>
+    <td align="center"><strong>chat</strong><br><img src="https://i.postimg.cc/kGhRb4ZX/image.png" width="250" alt="Ryoku No Dither Light chat"></td>
     <td align="center"><strong>settings</strong><br><img src="https://i.postimg.cc/fRjt7DV4/image.png" width="250" alt="Ryoku No Dither Light settings"></td>
-    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/kGhRb4ZX/image.png" width="250" alt="Ryoku No Dither Light add friend"></td>
+    <td align="center"><strong>add friend</strong><br><img src="https://i.postimg.cc/Gh2km0fg/image.png" width="250" alt="Ryoku No Dither Light add friend"></td>
   </tr>
 </table>
