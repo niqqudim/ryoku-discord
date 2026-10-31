@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Space+Mono:wght@400;700&display=swap');
 /* context icons by dav on discord, id 490604571824226306 */
 @import url('https://davart154.github.io/Themes/Snippets/Context%20Icons/ContextIconsSource.css');
-/* main.css */
 
 :root {
     container-name: root;
@@ -605,14 +604,14 @@ body {
     --font-code: var(--code-font), 'gg mono', 'Source Code Pro', Consolas, Monaco, monospace;
 }
 
-[class*='scroll'] {
+/* for the chat history ONLY */
+.scroller__36d07 {
     will-change: scroll-position;
 }
 .burstGlow__23977 {
     display: none;
 }
 
-/* animations.css */
 body {
     --list-item-transition: 0.2s ease; /* transition for list items */
     --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
@@ -627,17 +626,34 @@ body {
 @container body style(--animations: on) {
     /* list hover animations */
     .wrapper__2ea32 .link__2ea32 /* channels */,
-        .container__91a9d /* members */,
-        .channel__972a0 /* dms */ {
+        .channel__972a0:not(.dm__972a0) /* dms section buttons */ {
         transition: margin-left var(--list-item-transition);
         will-change: margin-left;
     }
     .wrapper__2ea32:hover .link__2ea32 {
         margin-left: 10px;
     }
-    .container__91a9d:hover,
-    .channel__972a0:hover {
+    .channel__972a0:not(.dm__972a0):hover {
         margin-left: 18px;
+    }
+    .dm__972a0 {
+        --dm-slide: calc(18px - 10px); 
+    }
+    .dm__972a0 > .interactive__972a0,
+    .dm__972a0 > .interactive__972a0 > .iconsContainer__972a0 {
+        transition: translate var(--list-item-transition);
+    }
+    .dm__972a0:hover > .interactive__972a0 {
+        translate: var(--dm-slide) 0;
+    }
+    .dm__972a0:hover > .interactive__972a0 > .iconsContainer__972a0 {
+        translate: calc(var(--dm-slide) * -1) 0;
+    }
+    .container__91a9d > .childContainer__91a9d {
+        transition: translate var(--list-item-transition);
+    }
+    .container__91a9d:hover > .childContainer__91a9d {
+        translate: calc(18px - 8px) 0; 
     }
     /* list hover channel dot */
     .unread__2ea32 {
@@ -659,7 +675,6 @@ body {
     }
 }
 
-/* background-image.css */
 body {
     --background-image-url: url('');
 }
@@ -678,7 +693,6 @@ body {
     }
 }
 
-/* chatbar.css */
 body {
     --chatbar-height: 47px; /* height of the chatbar (52px by default, 47px to align it with the user panel) */
 
@@ -802,7 +816,6 @@ body {
     }
 }
 
-/* colors.css */
 @property --colors {
     syntax: 'off | on';
     inherits: false;
@@ -1690,9 +1703,8 @@ body {
     }
 }
 
-/* dms-button.css */
 body {
-    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-url: none; /* icon svg url, set in the settings file. MUST BE A SVG. */
     --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
     --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
     --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
@@ -1780,7 +1792,6 @@ body {
     }
 }
 
-/* top-bar.css */
 body {
     --top-bar-height: 32px;
     --custom-app-top-bar-height: var(--top-bar-height);
@@ -2106,7 +2117,6 @@ body {
     }
 }
 
-/* transparency-blur.css */
 @property --panel-blur {
     syntax: 'off | on';
     inherits: false;
@@ -2188,7 +2198,6 @@ body {
     padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 4px) 0;
 }
 
-/* window-controls.css */
 body {
     --window-control-size: 14px;
     --window-controls-padding: calc(var(--gap) - (var(--window-control-size) / 2) + 1px);
@@ -2334,106 +2343,6 @@ body {
     }
 }
 
-/* loader: ascii (system24 style RYOKU, dithered) */
-@container body style(--ryoku-loader: ascii) {
-    .content_a2f514 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 22px;
-    }
-    .content_a2f514 > .spinner_a2f514 {
-        display: none;
-    }
-    .text_a2f514 {
-        position: static;
-    }
-    .content_a2f514::before {
-        content: "    ______  ______  __ ____  __\A    / __ \\ \\/ / __ \\/ //_/ / / /\A   / /_/ /\\  / / / / ,< / / / / \A  / _, _/ / / /_/ / /| / /_/ /  \A /_/ |_| /_/\\____/_/ |_\\____/   \A                                ";
-        display: block;
-        white-space: pre;
-        font-family: 'SpaceMono Nerd Font', 'Space Mono', 'JetBrains Mono', ui-monospace, monospace;
-        font-size: 18px;
-        line-height: 1.2;
-        letter-spacing: 0;
-        font-weight: 700;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-        background:
-            var(--loader-ascii-sweep, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAAAYCAYAAAAca4NeAAAEC0lEQVR42u2c0XHcMAxEz1eFS0gH6f/THbgEd+F8ZeZGg8U+gLzEJ4E/kj2yLEHAYrEE+XabsX18fX58v//6/abOyfF2u93U+asN907keLRl9POM9XEfE/AgP56rIwmADpj8vUd0PJ7/64A/nj8e1fsTEFB2efwf6jscz2cMIGwJfOL0kfMfnZ5k+iwrPv6tc/5ngkMUrA4sj89Onk+9u7pXBpLKTgMYAwgpCGQZlzhV5qwd5+s4/zPAIbo3BUllC2qT4zWRHTJQyuyUfeMrjrcrg0A1S3Wuq+gGtNbeVc/vvLZyH6ojRPZTdiXfazSHYQgy27g63mVdR4mVA3YEtAgMSMZTAJXRf/W+Ff0guk/EDrolQ8YQsozvviVhJ8MQhjW0MovLcjuYw84svpNh0JmS6nsTu6rvtZMdnJlp3K8S6B2xrMoSogzmdIQsCCJWoxR2x3p2BgOtwzNgqJRV7j5u9qHKfAjgTcnwwsN9QOUA0e87sw1HoMj0AAomkbNn4LDCIlzpQQI00wxWmEZmhwyoaJk4GsIFx05mkAU1ocoqIFTQEXDoZjl3LxVwlOZTau7Ygfq/JNCJpjSAcIFSgbKCzhTbardhBBJRE46bb89EQ3cdYUhO5Kw0anWbkyIbkUCvAMGVhMVTA0Knpqaqu2MMKxkxc0YlnlUBruv06nmyEsIxJicoZiUEAajs2ap6yQDCRQYJHJUFScditVwgU2400z8TbKMgdEBANQSiJTgx0QmgXS1B6T8DCCcpIzrMQFH5TExcpcpZuUBofJddEZFStVM/e6GX6tHo9BpQO0XXnYFJ3K8S8BXHpsxAiX3qd9WeAbrSb7X5hmgMBEhJ2/Lq4iYCCm5q9H+xqgGEH6QbVJVyygxUUGbOWWEJDhScs1dttQKodLaF6giRVuBAYZd+MIBw8tGhgoQZqGwdOTdhCRVQ6NbMdGqyQq9J23Kng1DZUNldfRfCDmfl44iKyBlcFiKB2xHQKs5fKRWqjk9YFxX9aKcm6c3IQJI8d1UnuQJg3AcEvDO4Bhw3zaaCgdbyWQdepa+gS5UrDERl6J39B3SjFAKeK8LqAMJJsj6pJQlAkF76blZcaWFeYQbVRh23k1O3N6M72+CEzo4QvSpkDyD8EACgzUeEJhJKnjlot2WXzGpUhVPHSCp/77YxU2VTpYTKgIBukOK+20pwn4k5nAoQdu8MpJyFtul+fX58V/ZTdDoC7d/vTK125+np7Et1+7TH+1f1CbJXQiVZ7GAAr8IiRlQsCEgRODiBa2UtgwKHlSacVQCl6xeyUqLCljIbdtdzVIP1GYlmAOGHagpEca4u9Y0yYkVHIOBAljx3ug275VVGwdUeD52FRW7BVwYM1Q1pV/dNeMXxB4Zb4S3GXV+mAAAAAElFTkSuQmCC")) 0 0 / 260px 100% repeat-y,
-            var(--loader-ascii-dither, url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 4 4%22 shape-rendering=%22crispEdges%22%3E%3Cpath fill=%22%237a746b%22 d=%22M0 0h1v1h-1zM2 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1z%22/%3E%3C/svg%3E")) 0 0 / 4px 4px repeat;
-        -webkit-background-clip: text;
-        background-clip: text;
-        image-rendering: pixelated;
-        animation: rx-ld-sweep 2s linear infinite;
-    }
-    .content_a2f514::after {
-        content: '// INK AND PAPER';
-        display: block;
-        padding-bottom: 8px;
-        font-family: 'SpaceMono Nerd Font', 'Space Mono', 'JetBrains Mono', ui-monospace, monospace;
-        font-size: 10px;
-        letter-spacing: 2.4px;
-        color: var(--loader-label-color, #7a756e);
-        background:
-            linear-gradient(var(--art-ink, #cdc4ba), var(--art-ink, #cdc4ba)) 0 100% / 34% 1px no-repeat,
-            linear-gradient(var(--loader-rule-color, #4a4640), var(--loader-rule-color, #4a4640)) 0 100% / 100% 1px no-repeat;
-        animation: rx-ld-rule 1.6s cubic-bezier(.33, 1, .68, 1) infinite;
-    }
-}
-@keyframes rx-ld-sweep {
-    from { background-position: -260px 0, 0 0; }
-    to { background-position: 380px 0, 0 0; }
-}
-@keyframes rx-ld-rule {
-    from { background-position: -60% 100%, 0 100%; }
-    to { background-position: 160% 100%, 0 100%; }
-}
-
-/* loader: ensō */
-@container body style(--ryoku-loader: enso) {
-    .content_a2f514 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 22px;
-    }
-    .content_a2f514 > .spinner_a2f514 {
-        display: none;
-    }
-    .text_a2f514 {
-        position: static;
-    }
-    .content_a2f514::before {
-        content: '';
-        display: block;
-        width: 200px;
-        height: 200px;
-        background-color: var(--art-ink, #cdc4ba);
-        mask: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 220 220%22%3E%3Cg fill=%22none%22 stroke=%22%23fff%22 stroke-linecap=%22round%22%3E %3Cpath d=%22M64.0 189.7A92 92 0 1 1 110.0 202.0%22 stroke-width=%2215%22 stroke-dasharray=%22530 530%22%3E %3Canimate attributeName=%22stroke-dashoffset%22 values=%22530;0;0;0%22 keyTimes=%220;.42;.86;1%22 dur=%222.8s%22 repeatCount=%22indefinite%22 calcMode=%22spline%22 keySplines=%22.55 .05 .25 1;0 0 1 1;0 0 1 1%22/%3E %3Canimate attributeName=%22opacity%22 values=%221;1;1;0%22 keyTimes=%220;.42;.8;1%22 dur=%222.8s%22 repeatCount=%22indefinite%22/%3E%3C/path%3E %3Cpath d=%22M57.7 177.0A85 85 0 1 1 155.0 182.1%22 stroke-width=%224%22 stroke-dasharray=%22435 435%22 opacity=%22.55%22%3E %3Canimate attributeName=%22stroke-dashoffset%22 values=%22435;435;0;0;0%22 keyTimes=%220;.05;.44;.86;1%22 dur=%222.8s%22 repeatCount=%22indefinite%22 calcMode=%22spline%22 keySplines=%220 0 1 1;.55 .05 .25 1;0 0 1 1;0 0 1 1%22/%3E %3Canimate attributeName=%22opacity%22 values=%22.55;.55;.55;0%22 keyTimes=%220;.42;.8;1%22 dur=%222.8s%22 repeatCount=%22indefinite%22/%3E%3C/path%3E %3Cpath d=%22M34.9 173.0A98 98 0 0 1 159.0 25.1%22 stroke-width=%221.5%22 stroke-dasharray=%223 9%22 opacity=%22.5%22%3E %3Canimate attributeName=%22opacity%22 values=%220;0;.5;.5;0%22 keyTimes=%220;.3;.45;.8;1%22 dur=%222.8s%22 repeatCount=%22indefinite%22/%3E%3C/path%3E %3C/g%3E%3C/svg%3E") center / contain no-repeat;
-    }
-    .content_a2f514::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 200px;
-        height: 200px;
-        translate: -50% 0;
-        background-color: var(--art-seal, #e2342a);
-        mask: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 220 220%22%3E%3Cpath d=%22M100.32 67.14C100.32 75.06 100.41 82.63 100.06 89.85H73.04L73.83 92.31H99.97C98.65 113.87 93.1 132.44 69.17 148.19L70.05 149.51C102.52 135.78 109.3 115.72 111.06 92.31H132.44C131.56 116.07 129.98 132.88 126.72 135.7C125.84 136.58 124.87 136.84 123.2 136.84C120.65 136.84 112.82 136.31 107.54 135.87L107.45 137.02C112.46 137.9 116.78 139.57 118.71 141.24C120.47 142.82 121.09 145.55 121.09 148.81C127.78 148.81 131.74 147.4 134.9 144.32C140.18 139.3 142.12 122.58 143.09 94.16C145.11 93.81 146.26 93.28 147.05 92.4L137.28 83.95L131.47 89.85H111.14C111.58 83.78 111.58 77.44 111.76 71.02C113.87 70.75 114.75 69.87 114.93 68.55Z%22 fill=%22%23fff%22/%3E%3C/svg%3E") center / contain no-repeat;
-        animation: rx-ld-kanji 2.8s cubic-bezier(.33, 1, .68, 1) infinite;
-    }
-}
-@keyframes rx-ld-kanji {
-    0%, 38% { opacity: 0; scale: .9; }
-    48%, 80% { opacity: 1; scale: 1; }
-    100% { opacity: 0; scale: 1; }
-}
-
-/* colors.css */
 @container root style(--colors: on) {
     #app-mount .wrapper__44b0c,
     #app-mount .container__1ce5d {
@@ -2445,7 +2354,6 @@ body {
     }
 }
 
-/* panel-labels.css */
 @property --panel-labels {
     syntax: 'off | on';
     inherits: false;
@@ -2681,7 +2589,6 @@ body {
     }
 }
 
-/* spotify-bar.css */
 @property --custom-spotify-bar {
     syntax: 'off | on';
     inherits: false;
@@ -3738,11 +3645,13 @@ body,
 }
 
 /* mentions */
-body,
-.theme-dark:not(.custom-user-profile-theme),
-.theme-light:not(.custom-user-profile-theme) {
-    --mention-background: var(--text-1);
-    --mention-foreground: var(--text-0);
+@container root style(--colors: on) {
+    body,
+    .theme-dark:not(.custom-user-profile-theme),
+    .theme-light:not(.custom-user-profile-theme) {
+        --mention-background: var(--text-1);
+        --mention-foreground: var(--text-0);
+    }
 }
 .message__5126c.mentioned__5126c {
     position: relative;
@@ -3753,14 +3662,13 @@ body,
     position: absolute;
     top: var(--radius-sm, 4px);
     height: calc(100% - 2 * var(--radius-sm, 4px));
-    /* pinned to the left edge of the message, before the avatar, whatever discord sets */
     left: 0 !important;
     inset-inline-start: 0 !important;
     right: auto !important;
     margin: 0 !important;
     z-index: 1;
     pointer-events: none;
-    background-color: var(--accent-2) !important; /* red line, like midnight */
+    background-color: var(--mention-line, var(--accent-2)) !important;
 }
 .mention {
     border-radius: 3px;
@@ -4012,13 +3920,6 @@ textarea::placeholder,
     #app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
         transform: none;
         transition: background-color 90ms ease-out;
-    }
-}
-/* midnight dms button animation */
-@container body style(--dms-icon-animation: spin) {
-    #app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
-    #app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
-        transform: rotate(-360deg) scale(0.8);
     }
 }
 @keyframes ryo-dm-stamp {
