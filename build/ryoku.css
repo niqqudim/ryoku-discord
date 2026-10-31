@@ -604,8 +604,9 @@ body {
     --font-code: var(--code-font), 'gg mono', 'Source Code Pro', Consolas, Monaco, monospace;
 }
 
-/* for the chat history ONLY */
-.scroller__36d07 {
+/* scroll hint for the chat history and the member list only */
+.scroller__36d07 /* chat */,
+.members_c8ffbb /* member list */ {
     will-change: scroll-position;
 }
 .burstGlow__23977 {
@@ -3770,6 +3771,7 @@ h3[class*="membersGroup_"]::after {
     .container_c8ffbb,
     .nowPlayingColumn__133bf {
         position: relative;
+        isolation: isolate; /* keeps the colophon inside the panel, so activities and popouts stay on top of it */
     }
     .container_c8ffbb::before,
     .nowPlayingColumn__133bf::before {
@@ -3783,8 +3785,9 @@ h3[class*="membersGroup_"]::after {
         font-size: 9px;
         letter-spacing: 2.2px;
         white-space: nowrap;
-        color: var(--text-5);
-        opacity: 0.5;
+        line-height: 1;
+        color: color-mix(in srgb, var(--text-5) 50%, transparent);
+        background-color: var(--background-base-lower); /* same as the panel, only shows when members scroll under it */
         pointer-events: none;
         user-select: none;
     }
