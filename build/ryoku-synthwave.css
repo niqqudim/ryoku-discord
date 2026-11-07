@@ -1,0 +1,95 @@
+/* for the synthwave template */
+:root {
+    --ryo-sun: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cdefs%3E%3Cmask id=%22m%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23fff%22/%3E%3Cg fill=%22%23000%22%3E%3Crect x=%220%22 y=%2253.00%22 width=%22100%22 height=%221.10%22/%3E%3Crect x=%220%22 y=%2260.30%22 width=%22100%22 height=%221.72%22/%3E%3Crect x=%220%22 y=%2267.67%22 width=%22100%22 height=%222.34%22/%3E%3Crect x=%220%22 y=%2275.11%22 width=%22100%22 height=%222.96%22/%3E%3Crect x=%220%22 y=%2282.62%22 width=%22100%22 height=%223.58%22/%3E%3Crect x=%220%22 y=%2290.20%22 width=%22100%22 height=%224.20%22/%3E%3Crect x=%220%22 y=%2297.85%22 width=%22100%22 height=%224.82%22/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23fff%22 mask=%22url(%23m)%22/%3E%3C/svg%3E");
+}
+
+/* sun */
+@container body style(--channels-sun: on) {
+    .sidebarList_pog62O::before {
+        background-image: var(--sun-gradient, none);
+    }
+}
+@container body style(--discover-sun: on) {
+    .nav_GQJi50::before {
+        background-image: var(--sun-gradient, none);
+    }
+}
+
+/* panel labels */
+@container body style(--panel-labels: on) {
+    .guilds_pog62O::after,
+    .panels_pog62O::after,
+    .sidebarList_pog62O::after,
+    .subtitleContainer_z_gUBg::after,
+    .messagesWrapper_8AE1Qq::after,
+    .channelTextArea_z_gUBg::after,
+    .content_z_gUBg > .membersWrap_86es0b::after,
+    .container_86es0b::after,
+    .container_zrUwGA > .container_ybUK7Z::after,
+    .peopleColumn_zrUwGA::after,
+    .nowPlayingColumn_zrUwGA::after,
+    .container_FrbQJp > .container_ybUK7Z::after,
+    .callContainer_hbKzX7::after {
+        text-shadow: var(--label-glow, none);
+    }
+}
+
+/* loader */
+@container body style(--ryoku-loader: outrun) {
+    .content_oDjP9R {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+    .content_oDjP9R > .spinner_oDjP9R {
+        display: none;
+    }
+    .text_oDjP9R {
+        position: static;
+    }
+    .content_oDjP9R::before {
+        content: '';
+        display: block;
+        width: 150px;
+        height: 120px;
+        margin-bottom: 64px;
+        background: var(--sun-gradient, linear-gradient(var(--yellow-2), var(--art-seal)));
+        mask: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 80%22%3E%3Cdefs%3E%3Cmask id=%22m%22 maskUnits=%22userSpaceOnUse%22 x=%220%22 y=%220%22 width=%22100%22 height=%2280%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23fff%22/%3E%3Cg fill=%22%23000%22%3E%3Crect x=%220%22 width=%22100%22%3E%3Canimate attributeName=%22y%22 values=%2246;80%22 dur=%223.6s%22 begin=%220.00s%22 repeatCount=%22indefinite%22/%3E%3Canimate attributeName=%22height%22 values=%220;6.5%22 dur=%223.6s%22 begin=%220.00s%22 repeatCount=%22indefinite%22/%3E%3C/rect%3E%3Crect x=%220%22 width=%22100%22%3E%3Canimate attributeName=%22y%22 values=%2246;80%22 dur=%223.6s%22 begin=%22-0.60s%22 repeatCount=%22indefinite%22/%3E%3Canimate attributeName=%22height%22 values=%220;6.5%22 dur=%223.6s%22 begin=%22-0.60s%22 repeatCount=%22indefinite%22/%3E%3C/rect%3E%3Crect x=%220%22 width=%22100%22%3E%3Canimate attributeName=%22y%22 values=%2246;80%22 dur=%223.6s%22 begin=%22-1.20s%22 repeatCount=%22indefinite%22/%3E%3Canimate attributeName=%22height%22 values=%220;6.5%22 dur=%223.6s%22 begin=%22-1.20s%22 repeatCount=%22indefinite%22/%3E%3C/rect%3E%3Crect x=%220%22 width=%22100%22%3E%3Canimate attributeName=%22y%22 values=%2246;80%22 dur=%223.6s%22 begin=%22-1.80s%22 repeatCount=%22indefinite%22/%3E%3Canimate attributeName=%22height%22 values=%220;6.5%22 dur=%223.6s%22 begin=%22-1.80s%22 repeatCount=%22indefinite%22/%3E%3C/rect%3E%3Crect x=%220%22 width=%22100%22%3E%3Canimate attributeName=%22y%22 values=%2246;80%22 dur=%223.6s%22 begin=%22-2.40s%22 repeatCount=%22indefinite%22/%3E%3Canimate attributeName=%22height%22 values=%220;6.5%22 dur=%223.6s%22 begin=%22-2.40s%22 repeatCount=%22indefinite%22/%3E%3C/rect%3E%3Crect x=%220%22 width=%22100%22%3E%3Canimate attributeName=%22y%22 values=%2246;80%22 dur=%223.6s%22 begin=%22-3.00s%22 repeatCount=%22indefinite%22/%3E%3Canimate attributeName=%22height%22 values=%220;6.5%22 dur=%223.6s%22 begin=%22-3.00s%22 repeatCount=%22indefinite%22/%3E%3C/rect%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Crect width=%22100%22 height=%2280%22 fill=%22%23fff%22 mask=%22url(%23m)%22/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+    }
+    .content_oDjP9R::after {
+        content: '';
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        width: 340px;
+        height: 64px;
+        translate: -50% 0;
+        background:
+            linear-gradient(var(--outrun-horizon, var(--accent-3)), var(--outrun-horizon, var(--accent-3))) 0 0 / 100% 2px no-repeat,
+            repeating-linear-gradient(transparent 0 15px, var(--outrun-grid, var(--art-seal)) 15px 16.5px),
+            repeating-linear-gradient(90deg, transparent 0 22px, var(--outrun-grid, var(--art-seal)) 22px 23.5px) 50% 0 / 100% 100%;
+        transform: perspective(110px) rotateX(62deg);
+        transform-origin: 50% 0;
+        mask:
+            linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent),
+            linear-gradient(#000 30%, transparent);
+        mask-composite: intersect;
+        animation: rx-ld-outrun 0.9s linear infinite;
+    }
+    .content_oDjP9R .text_oDjP9R::before {
+        content: 'LOADING_';
+        display: block;
+        margin-bottom: 6px;
+        font-family: var(--ryo-mono);
+        font-size: 11px;
+        letter-spacing: 2.2px;
+        color: var(--text-1);
+        text-shadow: var(--label-glow, none);
+    }
+}
+@keyframes rx-ld-outrun {
+    from { background-position: 0 0, 0 0, 50% 0; }
+    to { background-position: 0 0, 0 16.5px, 50% 0; }
+}

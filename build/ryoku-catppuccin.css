@@ -4,32 +4,27 @@
 }
 
 /* no recolouring */
-#app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home'],
-#app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8,
-#app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home']:is(:hover, .selected__6e9f8) > .childWrapper__6e9f8 {
+#app-mount .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'],
+#app-mount .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR,
+#app-mount .wrapper_JJ-hgR[data-list-item-id='guildsnav___home']:is(:hover, .selected_JJ-hgR) > .childWrapper_JJ-hgR {
     background: transparent !important;
     border-radius: var(--dms-icon-radius, 30%) !important;
     overflow: hidden;
 }
-#app-mount foreignObject:has(> .wrapper__6e9f8[data-list-item-id='guildsnav___home']) {
-    mask: none !important; /* discord morphs the button between circle and squircle, keep one shape */
+#app-mount foreignObject:has(> .wrapper_JJ-hgR[data-list-item-id='guildsnav___home']) {
+    mask: none !important; 
 }
-#app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before,
-#app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home']:is(:hover, .selected__6e9f8) > .childWrapper__6e9f8::before {
+#app-mount .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR::before,
+#app-mount .wrapper_JJ-hgR[data-list-item-id='guildsnav___home']:is(:hover, .selected_JJ-hgR) > .childWrapper_JJ-hgR::before {
     background: var(--dms-icon-svg-url) center / var(--dms-icon-svg-size) no-repeat !important;
     mask: none !important;
 }
 
-/* no animations */
-*:not(.spinner__46696, .spinner__46696 *),
-*:not(.spinner__46696, .spinner__46696 *)::before,
-*:not(.spinner__46696, .spinner__46696 *)::after {
+#app-mount .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'],
+#app-mount .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR,
+#app-mount .wrapper_JJ-hgR[data-list-item-id='guildsnav___home'] > .childWrapper_JJ-hgR::before,
+#app-mount .wrapper_JJ-hgR[data-list-item-id='guildsnav___home']:is(:hover, .selected_JJ-hgR) > .childWrapper_JJ-hgR::before {
+    transform: none !important;
     transition: none !important;
     animation: none !important;
-}
-/* except the stmap */
-@container body style(--dms-icon-animation: stamp) {
-    #app-mount .wrapper__6e9f8[data-list-item-id='guildsnav___home']:is(:hover, .selected__6e9f8) > .childWrapper__6e9f8::before {
-        animation: ryo-dm-stamp 300ms cubic-bezier(0.33, 1, 0.68, 1) !important;
-    }
 }
